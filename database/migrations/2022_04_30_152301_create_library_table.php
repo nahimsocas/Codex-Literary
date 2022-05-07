@@ -20,6 +20,9 @@ return new class extends Migration
             $table->foreignId('author_id')->constrained('users')
             ->onUpdate('cascade')
             ->onDelete('cascade');
+            $table->foreignId('publisher_id')->constrained('publisher')
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
             $table->timestamps();
         });
     }
