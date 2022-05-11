@@ -1,3 +1,20 @@
-<section>
-    
+<section id="cl_footer--unique">
+    <p>&copy; Codex Literary</p>
+    <ul id="cl_information">
+        <li>
+            <a href="#">ABOUT US</a>
+        </li>
+        <li>
+            <a href="#">TERMS</a>
+        </li>
+        <li>
+            <a href="#">PRIVACY</a>
+        </li>
+        <li>
+            <a href="#">ACCESIBILITY</a>
+        </li>
+        <li>
+            <a href="#">HELP</a>
+        </li>
+    </ul>
 </section>

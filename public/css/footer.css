@@ -1,0 +1,42 @@
+#cl_footer {
+	background-color: #282828;
+}
+
+#cl_footer--unique {
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	height: 4em;
+	font-weight: 300;
+	font-size: medium;
+}
+
+#cl_footer--unique p {
+	position: absolute;
+	color: rgba(255, 255, 255, 1);
+	margin: 0;
+	top: 1.4em;
+	left: 0;
+}
+
+#cl_information {
+	position: absolute;
+	top: .5em;
+	right: 0;
+}
+
+#cl_information li {
+	display: inline-block;
+	padding-left: 2.2em;
+	letter-spacing: 2px;
+}
+
+#cl_information li a {
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	transition: color 1s ease;
+}
+
+#cl_information li a:hover {
+	color: rgba(255, 255, 255, .6);
+}
