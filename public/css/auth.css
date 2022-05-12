@@ -93,7 +93,8 @@ button[type="submit"]:active {
 #auth_sumbition small {
   display: block;
   margin: .2em 0 0 0;
-	width: 85%;
+  padding: 0;
+	width: 86%;
 	text-align: end;
   color: rgba(255, 87, 51, .66);
 }

@@ -39,9 +39,9 @@
             </li>
         @else
             <li>
-                <a href="{{ route('login') }}" id="logout_button" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGIN</a>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
             </li>
-            <form action="{{ route('logout') }}" method="POST" style="display: none">
+            <form action="{{ route('logout') }}" method="POST" id="logout-form" style="display: none">
                 @csrf
             </form>
         @endguest
