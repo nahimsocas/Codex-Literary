@@ -14,7 +14,7 @@
             <a href="#">ACCESIBILITY</a>
         </li>
         <li>
-            <a href="#">HELP</a>
+            <a href="{{ route('contact') }}">CONTACT</a>
         </li>
     </ul>
 </section>

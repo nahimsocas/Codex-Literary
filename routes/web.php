@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -25,5 +26,10 @@ Route::view('/register', 'register')->name('register');
 
 Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
+
+Route::controller(ContactController::class)->group(function() {
+    Route::get('/contact', 'index')->name('contact');
+    Route::post('contact', 'store');
+});
 
 Auth::routes();

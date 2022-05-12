@@ -5,6 +5,11 @@
 @section('css, javascript')
     <link href="{{ asset('css/small-page.css') }}" rel="stylesheet">
     <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
+    <style>
+        #auth_sumbition label {
+            width: 26.8% !important;
+        }
+    </style>
 @endsection
 
 @section('content')

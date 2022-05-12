@@ -14,7 +14,7 @@
         </li>
         @guest
             <li>
-                <a href="#">CREATE</a>
+                <a href="{{ route('login') }}">CREATE</a>
             </li>                
         @else
             @if (empty(auth()->user()->email_verified_at))
