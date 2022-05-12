@@ -21,6 +21,6 @@ class ContactController extends Controller
         $verifiedSend = true;
         Mail::to('codex.literary@gmail.com')->queue(new MessageReceived($msg));
 
-        return view('contact', $verifiedSend);
+        return view('contact', compact('verifiedSend'));
     }
 }

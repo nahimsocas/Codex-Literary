@@ -29,7 +29,7 @@ Route::view('/privacy', 'privacy')->name('privacy');
 
 Route::controller(ContactController::class)->group(function() {
     Route::get('/contact', 'index')->name('contact');
-    Route::post('contact', 'store');
+    Route::post('/contact', 'store');
 });
 
 Auth::routes();

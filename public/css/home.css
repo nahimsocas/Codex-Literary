@@ -236,9 +236,7 @@
 	width: 20%;
 	height: 100%;
 	border: 1px solid rgba(40, 40, 40, 1);
-	border-top: 0;
-	border-bottom: 0;
-	transition: width 1s ease, filter 1s ease;
+	transition: width .2s ease, filter 1s ease;
 }
 
 #weekly--section:hover article:hover, #monthly--section:hover article:hover {

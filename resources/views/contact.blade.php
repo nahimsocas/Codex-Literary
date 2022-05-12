@@ -9,7 +9,7 @@
 
 @section('content')
     <main>
-        <section>
+        <section id="contact_form">
             <h2>CONTACT US</h2>
             <form action="{{ route('contact') }}" method="POST" id="contact_submit">
                 @csrf
@@ -30,7 +30,7 @@
                 </section>
                 <section>
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="42" rows="4" minlength="10" required>{{ old('message') }}</textarea>
+                    <textarea name="message" id="message" cols="30" rows="5" minlength="10" required>{{ old('message') }}</textarea>
                     {!! $errors->first('message', '<small>:message</small>') !!}
                 </section>
                 <section>
@@ -38,5 +38,10 @@
                 </section>
             </form>
         </section>
+        @isset ($verifiedSend)
+            <section id="message_sent">    
+                <p>Message Sent</p>
+            </section>
+        @endisset
     </main>
 @endsection
