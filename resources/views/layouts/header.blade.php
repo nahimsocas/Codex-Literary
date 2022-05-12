@@ -35,7 +35,7 @@
         </li>
         @guest
             <li>
-                <a href="#">LOGIN</a>
+                <a href="{{ route('login') }}">LOGIN</a>
             </li>
         @else
             <li>

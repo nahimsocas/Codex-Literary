@@ -1,0 +1,74 @@
+#terms-privacy--main {
+    margin-bottom: 2.5em;
+}
+
+#terms_privacy {
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+#list_tree {
+    display: block;
+    width: 24%;
+    padding: 6em 1em 1.5em 1em;
+    font-size: 1.04em;
+}
+
+#list_tree > ul {
+    position: sticky;
+    top: 6em;
+}
+
+#list_tree ul > li {
+    list-style: none outside none;
+}
+
+#list_tree a:active {
+    color: black;
+}
+
+#list_tree a {
+    text-decoration: none;
+    color: rgba(121, 121, 121, 1);
+}
+
+#tree_info {
+    display: inline-block;
+    padding-left: 2.2em;
+    width: 52%;
+    height: 100%;
+    color: #474747;
+}
+
+#tree_info a {
+    color: black;
+}
+
+#tree_info h1 {
+    font-size: xx-large;
+}
+
+#tree_info h2:first-of-type {
+    margin-top: 0em;
+}
+
+#tree_info h2 {
+    font-size: x-large;
+    margin-top: 2em;
+}
+
+#tree_info h1, h2, p {
+    letter-spacing: .66px;
+    line-height: 1.4em;
+}
+
+#tree_info p {
+    font-weight: 500;
+}
+
+#tree_info ul li {
+    letter-spacing: .66px;
+    line-height: 1.4em;
+    font-weight: 500;
+}

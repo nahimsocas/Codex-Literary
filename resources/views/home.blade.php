@@ -3,7 +3,7 @@
 @section('title', 'Codex Literary')
 
 @section('css, javascript')
-    {{-- <script type="text/javascript" src="{{ asset('js/home.js') }}" defer></script> --}}
+    <script type="text/javascript" src="{{ asset('js/home.js') }}" defer></script>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endsection
 
@@ -163,10 +163,10 @@
             </section>
             <section id="slideshow--upper">
                 <section id="slideshow_button--upper">
-                    <input type="button" class="current_slideshow" data-selected="true">
-                    <input type="button" class data-selected="false">
-                    <input type="button" class data-selected="false">
-                    <input type="button" class data-selected="false">
+                    <button type="button" class="current_slideshow" data-selected="true"></button>
+                    <button type="button" class data-selected="false"></button>
+                    <button type="button" class data-selected="false"></button>
+                    <button type="button" class data-selected="false"></button>
                 </section>
             </section>
             <section id="news">

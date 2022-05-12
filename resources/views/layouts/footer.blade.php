@@ -5,10 +5,10 @@
             <a href="#">ABOUT US</a>
         </li>
         <li>
-            <a href="#">TERMS</a>
+            <a href="{{ route('terms') }}">TERMS</a>
         </li>
         <li>
-            <a href="#">PRIVACY</a>
+            <a href="{{ route('privacy') }}">PRIVACY</a>
         </li>
         <li>
             <a href="#">ACCESIBILITY</a>

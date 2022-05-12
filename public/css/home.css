@@ -81,7 +81,7 @@
 	top: 90%
 }
 
-#slideshow_button--upper input {
+#slideshow_button--upper button {
 	background-color: rgba(255, 255, 255, .3);
 	border-radius: 2em;
 	border: none;
@@ -92,7 +92,7 @@
 	transition: all 1s ease;
 }
 
-#slideshow_button--upper input:hover {
+#slideshow_button--upper button:hover {
 	background-color: rgba(255, 255, 255, .8);
 }
 
