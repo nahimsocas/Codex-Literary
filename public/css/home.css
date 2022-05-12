@@ -1,5 +1,5 @@
 #home_main {
-	background-color: rgba(251, 251, 251, .22) !important;
+	background-color: rgba(228, 228, 228, .44) !important;
 }
 
 #top_main {
@@ -194,6 +194,7 @@
 	height: 100%;
 	width: 49.5%;
 	background-color: rgba(251, 250, 245, 1);
+	color: rgba(40, 40, 40, .95);
 }
 
 #popular>h2 {
@@ -205,14 +206,49 @@
 
 #popular h3 {
 	text-align: center;
+	margin: 0;
 }
 
-#popular--weakly,
+#popular--weekly,
 #popular--monthly {
-	height: 40%;
-	margin: 1em;
-	font-size: smaller;
-	letter-spacing: .5px;
+	box-sizing: border-box;
+	display: block;
+	height: 42%;
+	font-size: medium;
+	letter-spacing: .6px;
+	margin-top: .8em;
+	border-bottom: 2px solid black;
+}
+
+#weekly--section,
+#monthly--section {
+	box-sizing: border-box;
+	text-align: center;
+	margin: .2em 1.4em 0 1.4em;
+	height: 89%;
+	overflow: hidden;
+}
+
+#weekly--section>article,
+#monthly--section>article {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	border: 1px solid rgba(40, 40, 40, 1);
+	border-top: 0;
+	border-bottom: 0;
+	transition: width 1s ease, filter 1s ease;
+}
+
+#weekly--section:hover article:hover, #monthly--section:hover article:hover {
+	filter: blur(0);
+	width: 60%;
+}
+
+#weekly--section:hover article, #monthly--section:hover article {
+	width: 10%;
+	filter: blur(1px);
 }
 
 #contest {

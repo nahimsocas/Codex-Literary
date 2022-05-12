@@ -163,10 +163,10 @@
             </section>
             <section id="slideshow--upper">
                 <section id="slideshow_button--upper">
-                    <button type="button" class="current_slideshow" data-selected="true"></button>
-                    <button type="button" class data-selected="false"></button>
-                    <button type="button" class data-selected="false"></button>
-                    <button type="button" class data-selected="false"></button>
+                    <button class="current_slideshow" data-selected="true"></button>
+                    <button class data-selected="false"></button>
+                    <button class data-selected="false"></button>
+                    <button class data-selected="false"></button>
                 </section>
             </section>
             <section id="news">
@@ -233,11 +233,25 @@
             </section>
             <section id="popular">
                 <h2>POPULAR</h2>
-                <section id="popular--weakly">
-                    <h3>POPULAR THIS WEAK</h3>
+                <section id="popular--weekly">
+                    <h3>POPULAR THIS WEEK</h3>
+                    <section id="weekly--section">
+                        <article data-weekly="1"></article><!--
+                     --><article data-weekly="2"></article><!--
+                     --><article data-weekly="3"></article><!--
+                     --><article data-weekly="4"></article><!--
+                     --><article data-weekly="5"></article>
+                    </section>
                 </section>
                 <section id="popular--monthly">
                     <h3>POPULAR THIS MONTH</h3>
+                    <section id="monthly--section">
+                        <article data-weekly="1"></article><!--
+                     --><article data-weekly="2"></article><!--
+                     --><article data-weekly="3"></article><!--
+                     --><article data-weekly="4"></article><!--
+                     --><article data-weekly="5"></article>
+                    </section>
                 </section>
             </section>
             <section id="contest">
