@@ -7,13 +7,21 @@
     <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
     <style>
         #auth_form {
-          width: 26% !important;
+          width: 34% !important;
         }
         
         p {
           text-align: start;
-          padding: .4em 0;
-          margin: .4em;
+          padding: .8em 0;
+          margin: .2em .4em;
+        }
+
+        #auth_sumbition {
+            padding-top: 0 !important;
+        }
+
+        button {
+            margin-bottom: 1.2em !important;
         }
     </style>
 @endsection

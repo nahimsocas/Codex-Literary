@@ -19,6 +19,10 @@ body {
 	color: rgba(251, 250, 245, .66);
 }
 
+#auth_form p {
+	color: rgba(251, 250, 245, 1);
+}
+
 #auth_sumbition {
 	box-sizing: border-box;
 	background-color: rgba(40, 40, 40, 1);

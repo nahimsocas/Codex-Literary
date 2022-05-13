@@ -24,6 +24,11 @@
                     {!! $errors->first('name', '<small>:message</small>') !!}
                 </section>
                 <section>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="{{ old('username') }}" required autofocus>
+                    {!! $errors->first('username', '<small>:message</small>') !!}
+                </section>
+                <section>
                     <label for="email">Email Address:</label>
                     <input type="email" name="email" id="email" value="{{ old('email') }}" required>
                     {!! $errors->first('email', '<small>:message</small>') !!}

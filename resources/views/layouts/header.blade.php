@@ -19,7 +19,7 @@
         @else
             @if (empty(auth()->user()->email_verified_at))
                 <li>
-                    <a href="/email/verify">CREATE</a>
+                    <a href="#">CREATE</a>
                 </li>            
             @else
                 <li>
