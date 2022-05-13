@@ -223,6 +223,8 @@
 #weekly--section,
 #monthly--section {
 	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: .33em;
 	text-align: center;
 	margin: .2em 1.4em 0 1.4em;
 	height: 89%;
@@ -235,8 +237,20 @@
 	display: inline-block;
 	width: 20%;
 	height: 100%;
-	border: 1px solid rgba(40, 40, 40, 1);
+	border: 2px solid rgba(40, 40, 40, 1);
+	border-bottom: 0;
+	border-top: 0;
 	transition: width .2s ease, filter 1s ease;
+}
+
+#weekly--section>article:nth-child(1),
+#monthly--section>article:nth-child(1) {
+	border-left: 0;
+}
+
+#weekly--section>article:nth-child(5),
+#monthly--section>article:nth-child(5) {
+	border-right: 0;
 }
 
 #weekly--section:hover article:hover, #monthly--section:hover article:hover {
@@ -246,7 +260,7 @@
 
 #weekly--section:hover article, #monthly--section:hover article {
 	width: 10%;
-	filter: blur(1px);
+	filter: blur(1.5px);
 }
 
 #contest {
