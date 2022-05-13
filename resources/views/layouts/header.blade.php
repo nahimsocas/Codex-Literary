@@ -19,7 +19,7 @@
         @else
             @if (empty(auth()->user()->email_verified_at))
                 <li>
-                    <a href="#">CREATE</a>
+                    <a href="{{ route('verification.notice') }}">CREATE</a>
                 </li>            
             @else
                 <li>

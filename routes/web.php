@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +24,8 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::view('/login', 'login')->name('login');
 Route::view('/register', 'register')->name('register');
+Route::view('email/verify', 'show')->name('verification.notice');
+
 
 Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
@@ -32,4 +35,4 @@ Route::controller(ContactController::class)->group(function() {
     Route::post('/contact', 'store');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
