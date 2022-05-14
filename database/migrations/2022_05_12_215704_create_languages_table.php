@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('code')->unique()->nullable(false);
             $table->string('language')->nullable(false);
+            $table->string('native')->nullable(false);
             $table->timestamps();
         });
     }

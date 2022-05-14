@@ -17,7 +17,7 @@
                 <a href="{{ route('login') }}">CREATE</a>
             </li>                
         @else
-            @if (empty(auth()->user()->email_verified_at))
+            @if (empty(auth()->user()->email_verified_at))          
                 <li>
                     <a href="{{ route('verification.notice') }}">CREATE</a>
                 </li>            

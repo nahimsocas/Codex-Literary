@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CreateController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -17,15 +18,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/', 'index')->name('home');
-    Route::get('/home', 'index');
+Route::view('/', 'home')->name('home');
+Route::view('/home', 'home');
+
+Route::controller(CreateController::class)->middleware('verified')->group(function() {
+    Route::get('/create', 'index')->name('create');
 });
 
 Route::view('/login', 'login')->name('login');
 Route::view('/register', 'register')->name('register');
 Route::view('email/verify', 'show')->name('verification.notice');
-
 
 Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');

@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('literaries', function (Blueprint $table) {
+        Schema::create('codex_genres', function (Blueprint $table) {
             $table->id();
-            $table->string('literary')->nullable(false);
+            $table->foreignId('genres_id')->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('codexes_id')->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('literaries');
+        Schema::dropIfExists('codex_genres');
     }
 };

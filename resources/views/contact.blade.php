@@ -30,7 +30,7 @@
                 </section>
                 <section>
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="5" minlength="10" required>{{ old('message') }}</textarea>
+                    <textarea name="message" id="message" cols="35" rows="5" minlength="10" required>{{ old('message') }}</textarea>
                     {!! $errors->first('message', '<small>:message</small>') !!}
                 </section>
                 <section>
