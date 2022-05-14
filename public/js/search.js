@@ -4,14 +4,21 @@ const searchBar = document.getElementById('search_bar');
 const clContent = document.getElementById('cl_content');
 const searchResults = document.forms.search;
 let clickedSearch = false;
+console.log(searchList);
 
-fetch('https://raw.githubusercontent.com/benoitvallon/100-best-books/master/books.json')
-	.then(response => response.json())
-	.then(codex => {
-		[...codex].forEach((element) => {
-			clContent.innerHTML += `<option value="${element.title}">${element.author}</option>`
-		});
-	});
+console.log(searchList);
+
+for (let position in searchList) {
+	let theValue;
+	for (let details in searchList[position]) {
+		if (details == 'value') {
+			theValue = searchList[position][details];
+		}
+		if (details == 'text') {
+			clContent.innerHTML += `<option value="${theValue}">${searchList[position][details]}</option>`;
+		}
+	}
+}
 
 searchButton.addEventListener('click', () => {
 	clickedSearch = !clickedSearch;

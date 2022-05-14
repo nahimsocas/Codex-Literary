@@ -6,6 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>@yield('title')</title>
         @yield('css, javascript')
+        <script type="text/javascript" src="{{ asset('js/list.js')}}" defer></script>
         <script type="text/javascript" src="{{ asset('js/search.js')}}" defer></script>
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <link rel="stylesheet" href="{{ asset('css/header.css') }}">
