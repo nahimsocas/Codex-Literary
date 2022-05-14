@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('url')->nullable(false);
             $table->foreignId('codexes_id')->unique()->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('codex_authors_id')->unique()->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
