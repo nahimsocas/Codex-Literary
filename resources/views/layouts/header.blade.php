@@ -7,7 +7,7 @@
             <a href="#" id="search_button">SEARCH</a>
         </li>
         <li>
-            <a href="#">LIBRARY</a>
+            <a href="{{ route('library.index') }}">LIBRARY</a>
         </li>
         <li>
             <a href="#">STORE</a>

@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LibraryController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('home');
 Route::view('/home', 'home');
+
+Route::controller(LibraryController::class)->group(function() {
+    Route::get('/library', 'index')->name('library.index');
+    Route::get('/library/{url}', 'show')->name('library.show');
+});
 
 Route::controller(CreateController::class)->middleware('verified')->group(function() {
     Route::get('/create', 'index')->name('create');
