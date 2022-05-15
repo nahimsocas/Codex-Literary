@@ -11,6 +11,6 @@ class Library extends Model
 
     public function getRouteKeyName()
     {
-        return ['url', 'codexes_id'];
+        return ['url'];
     }
 }

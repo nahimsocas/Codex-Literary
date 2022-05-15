@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
-            $table->string('author')->unique()->nullable(false);
+            $table->string('author', 25)->unique()->nullable(false);
             $table->foreignId('users_id')->unique()->nullable(true)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

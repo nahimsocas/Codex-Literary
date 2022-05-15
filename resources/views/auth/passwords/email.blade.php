@@ -7,9 +7,13 @@
     <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
     <style>
         #auth_form {
-          width: 26% !important;
+          width: 30% !important;
         }
         
+        #auth_form label {
+            width: 26% !important;
+        }
+
         p {
           text-align: start;
           padding: .4em 0;

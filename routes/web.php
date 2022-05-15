@@ -28,7 +28,7 @@ Route::controller(LibraryController::class)->group(function() {
 });
 
 Route::controller(CreateController::class)->middleware('verified')->group(function() {
-    Route::get('/create', 'index')->name('create');
+    Route::get('/create', 'index')->name('create.index');
 });
 
 Route::view('/login', 'login')->name('login');

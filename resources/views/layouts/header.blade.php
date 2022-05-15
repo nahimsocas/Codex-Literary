@@ -18,7 +18,7 @@
             </li>                
         @else
             <li>
-                <a href="{{ empty(auth()->user()->email_verified_at) ? route('verification.notice') : route('home') }}">CREATE</a>
+                <a href="{{ empty(auth()->user()->email_verified_at) ? route('verification.notice') : route('create.index') }}">CREATE</a>
             </li>
         @endguest
         <li>
