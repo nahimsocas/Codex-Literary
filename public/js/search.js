@@ -4,9 +4,6 @@ const searchBar = document.getElementById('search_bar');
 const clContent = document.getElementById('cl_content');
 const searchResults = document.forms.search;
 let clickedSearch = false;
-console.log(searchList);
-
-console.log(searchList);
 
 for (let position in searchList) {
 	let theValue;

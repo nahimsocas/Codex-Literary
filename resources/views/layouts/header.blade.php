@@ -17,15 +17,9 @@
                 <a href="{{ route('login') }}">CREATE</a>
             </li>                
         @else
-            @if (empty(auth()->user()->email_verified_at))          
-                <li>
-                    <a href="{{ route('verification.notice') }}">CREATE</a>
-                </li>            
-            @else
-                <li>
-                    <a href="#">CREATE</a>
-                </li>
-            @endif
+            <li>
+                <a href="{{ empty(auth()->user()->email_verified_at) ? route('verification.notice') : route('home') }}">CREATE</a>
+            </li>
         @endguest
         <li>
             <a href="#">COMMUNITY</a>
@@ -34,8 +28,15 @@
             <a href="#">FORUM</a>
         </li>
         @guest
-            <li>
-                <a href="{{ route('login') }}">LOGIN</a>
+            <li>USER
+                <ul id="user_list">
+                    <li>
+                        <a href="{{ route('login') }}">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('register') }}">REGISTER</a>
+                    </li>
+                </ul>
             </li>
         @else
             <li>
