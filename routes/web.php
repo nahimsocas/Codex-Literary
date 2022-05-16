@@ -35,6 +35,7 @@ Route::view('/login', 'login')->name('login');
 Route::view('/register', 'register')->name('register');
 Route::view('email/verify', 'show')->name('verification.notice');
 
+Route::view('/about-us', 'about')->name('about-us');
 Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
 

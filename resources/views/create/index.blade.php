@@ -8,11 +8,10 @@
 
 @section('content')
     <main>
-        <section>
+        <section id="create_text">
             @if (auth()->user()->type == 'reader-writer')
-            @else
-                                
             @endif
+            <textarea name="user-text" id="user-text" cols="" rows=""></textarea>
         </section>
     </main>
 @endsection

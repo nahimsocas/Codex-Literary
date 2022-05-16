@@ -2,7 +2,7 @@
     <p>&copy; Codex Literary</p>
     <ul id="cl_information">
         <li>
-            <a href="#">ABOUT US</a>
+            <a href="{{ route('about-us') }}">ABOUT US</a>
         </li>
         <li>
             <a href="{{ route('terms') }}">TERMS</a>
