@@ -22,7 +22,9 @@ class DatabaseSeeder extends Seeder
             CodexSeeder::class,
             CodexAuthorSeeder::class,
             CodexGenreSeeder::class,
-            LibrarySeeder::class
+            LibrarySeeder::class,
+            UserSeeder::class,
+            ChapterSeeder::class
         ]);
     }
 }

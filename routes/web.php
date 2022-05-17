@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CreateatBasicController;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LibraryController;
@@ -27,8 +28,10 @@ Route::controller(LibraryController::class)->group(function() {
     Route::get('/library/{url}', 'show')->name('library.show');
 });
 
-Route::controller(CreateController::class)->middleware('verified')->group(function() {
+Route::controller(CreateatBasicController::class)->middleware('verified')->group(function() {
     Route::get('/create', 'index')->name('create.index');
+    Route::get('/create/new-story', 'create')->name('create.create');
+    Route::post('/create', 'store')->name('create.store');
 });
 
 Route::view('/login', 'login')->name('login');

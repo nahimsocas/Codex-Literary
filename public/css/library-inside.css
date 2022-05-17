@@ -1,0 +1,89 @@
+body {
+	background-color: rgba(219, 220, 218, .66) !important;
+}
+
+#chosen_codex {
+	width: 75%;
+	margin: 0 auto;
+	letter-spacing: .6px;
+	color: rgba(40, 40, 40, .96);
+	background-color: rgba(250, 250, 250, 1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#chosen_codex--img {
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	height: 400px;
+	width: 26.5%;
+}
+
+#chosen_codex--img img {
+	box-sizing: border-box;
+	display: block;
+	margin: 0;
+	height: 100%;
+	transition: all 1s ease;
+}
+
+#chosen_codex--information {
+	display: inline-block;
+	height: 180px;
+	width: 73%;
+
+}
+
+#chosen_codex--information h1 {
+	font-size: 2.2em;
+	margin: .5em 0 .3em 0;
+}
+
+#chosen_codex--information h2 {
+	font-size: 1.2em;
+	margin: .5em 0 .3em 0;
+}
+
+#chosen_codex--information h3 {
+	display: inline-block;
+	width: 30%;
+	font-size: medium;
+}
+
+#chosen_codex--information details {
+	margin-top: 2em;
+}
+
+#chosen_codex--information p {
+	width: 88%;
+}
+
+#chosen_codex--chapters {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 1.8em;
+	padding-bottom: 2em;
+	letter-spacing: .6px;
+	color: rgba(40, 40, 40, .96);
+	background-color: rgba(249, 249, 248, 1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#chosen_codex--chapters summary {
+	margin: 2em;
+	padding-top: 2em;
+}
+
+#chosen_codex--chapters h2 {
+	margin: .8em 1.4em;
+}
+
+#chosen_codex--chapters p {
+	margin: 2em;
+	font-size: 1.06em;
+	letter-spacing: 0px;
+	line-height: 1.4em;
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
+}

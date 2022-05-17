@@ -1,6 +1,6 @@
 <section id="top_header">
     <a href="{{ route('home') }}">
-        <img src="{{ asset('imgs/Logo.png') }}" alt="Codex Literary">
+        <img src="{{ asset('../imgs/Logo.png') }}" alt="Codex Literary">
     </a>
     <ul id="nav_list">
         <li>
@@ -39,8 +39,12 @@
                 </ul>
             </li>
         @else
-            <li>
-                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
+            <li>USER
+                <ul id="user_list">
+                    <li>
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
+                    </li>
+                </ul>
             </li>
             <form action="{{ route('logout') }}" method="POST" id="logout-form" style="display: none">
                 @csrf

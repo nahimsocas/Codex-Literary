@@ -1,0 +1,144 @@
+body {
+	background-color: rgba(219, 220, 218, .66) !important;
+}
+
+#create_project {
+	width: 75%;
+	margin: auto;
+	background-color: rgba(250, 250, 250, 1);
+	box-shadow: 0 0 2px 2px rgba(40, 40, 40, .1);
+	transition: all 2s ease;
+}
+
+#create_project:hover {
+	background-color: white;
+}
+
+#create_project h2 {
+	text-align: center;
+	margin: 0;
+	padding: 1.2em;
+}
+
+#create_project>* {
+	box-sizing: border-box;
+	letter-spacing: .6px;
+	color: rgba(40, 40, 40, 1);
+}
+
+#create_project form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#cover-section {
+	width: 40%;
+	text-align: center;
+}
+
+#cover-section img {
+	width: 54%;
+	opacity: 1;
+	transition: all 1s ease;
+}
+
+#cover-section img:hover {
+	opacity: .6;
+}
+
+#second-box {
+	width: 60%;
+}
+
+#second-box>section {
+	display: inline-block;
+}
+
+#title-section,
+#type-section {
+	width: 49.5%;
+}
+
+#title,
+#genre,
+#language,
+#synopsis {
+	box-sizing: border-box;
+	width: 94%;
+	padding: .5em;
+	font-size: medium;
+	border-radius: .2em;
+	border: none;
+	border-bottom: 2px solid #282828;
+	background-color: rgba(222, 222, 222, .6);
+}
+
+#novel,
+#book {
+	margin: 0;
+}
+
+#novel {
+	margin-right: 2.2em;
+}
+
+#genre-section,
+#language-section {
+	width: 49%;
+	margin-top: 2em;
+}
+
+#synopsis-section {
+	width: 100%;
+	margin-top: 2em;
+}
+
+#synopsis {
+	resize: none;
+	height: 8em;
+}
+
+#title:hover,
+#genre:hover,
+#language:hover,
+#synopsis:hover {
+	background-color: rgba(197, 197, 197, .5);
+}
+
+#title:focus,
+#genre:focus,
+#language:focus,
+#synopsis:focus {
+	outline: none;
+}
+
+#submit-section {
+	text-align: center;
+	padding: 2em;
+	width: 100%;
+}
+
+#submit-section button {
+	padding: 1em 3.4em;
+	font-size: medium;
+	border-radius: .2em;
+	border: 1px solid #282828;
+	background-color: rgba(222, 222, 222, .6);
+	transition: all 1s ease;
+}
+
+#submit-section button:hover {
+	background-color: rgba(197, 197, 197, .8);
+}
+
+#submit-section button:active {
+	background-color: rgba(197, 197, 197, 1);
+}
+
+.section-label {
+	display: block;
+	padding: .6em 0;
+	margin-bottom: .5em;
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+}

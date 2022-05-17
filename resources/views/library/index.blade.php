@@ -3,6 +3,7 @@
 @section('title', 'Library')
 
 @section('css, javascript')
+    <link href="{{ asset('css/small-page.css') }}" rel="stylesheet">
     <link href="{{ asset('css/library.css') }}" rel="stylesheet">
 @endsection
 
@@ -17,14 +18,14 @@
                                 <img src="{{ $value->cover }}" alt="{{ $value->title }}">
                             </section>
                             <section class="lib_codex--information">
-                                <h1>{{ $value->title }}</h1>
+                                <h1>{{ ucwords(strtolower($value->title)) }}</h1>
                                 <h2>{{ $value->author }}</h2>
                                 <p>{{ $value->description }}</p>
                             </section>
                         </a>
                     </article>
                 @endforeach
-                <section id="lib_codex--pagination">
+                <section id="lib_codex--pagination" style="display: block; width: 100%; text-align: center;">
                     {{ $library->links() }}
                 </section>
             @else

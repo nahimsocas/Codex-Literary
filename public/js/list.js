@@ -63,4 +63,5 @@ let searchList = {
 	61: { 'value': "Everybody Behaves Badly", 'text': "Lesley M M Blume" },
 	62: { 'value': "The Harvard Psychedelic Club", 'text': "Don Lattin" },
 	63: { 'value': "Diane Arbus", 'text': "Arthur Lubow" },
+	64: { 'value': "Codex Literary Prueba", 'text': "admin" },
 };
