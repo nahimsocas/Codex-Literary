@@ -1,0 +1,127 @@
+body {
+	background-color: rgba(219, 220, 218, .66) !important;
+}
+
+#write {
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	box-shadow: 0 0 2px 2px rgba(40, 40, 40, .1);
+}
+
+#write>p {
+	font-size: xx-large;
+	font-weight: 400;
+	margin: 0;
+}
+
+#write form,
+#input-data,
+#submit-buttons,
+#text-data,
+#thoughts-data {
+	border-top: 1px solid rgba(235, 235, 235, 1);
+}
+
+#flex-data {
+	display: flex;
+}
+
+#write form {
+	background-color: white;
+}
+
+#write form>* {
+	box-sizing: border-box;
+}
+
+#input-data,
+#submit-buttons {
+	box-sizing: border-box;
+	display: inline-block;
+	height: 4em;
+}
+
+#input-data {
+	width: 75%;
+}
+
+#submit-buttons {
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+	padding: .4em;
+	background-color: rgba(223, 223, 217, .4);
+}
+
+#submit-buttons button {
+	display: inline-block;
+	width: 47.5%;
+	height: 100%;
+	cursor: pointer;
+	font-size: .94em;
+	border-radius: .2em;
+	border: 1px solid rgba(40, 40, 40, .22);
+	background-color: rgba(222, 222, 222, 1);
+	transition: all 1s ease;
+}
+
+#submit-buttons button:hover {
+	background-color: rgba(197, 197, 197, .8);
+}
+
+#submit-buttons button:active {
+	background-color: rgba(197, 197, 197, 1);
+}
+
+#title,
+#text,
+#thoughts {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 2em;
+	resize: none;
+	line-height: 2em;
+	font-size: medium;
+	font-weight: 400;
+	border: 1px solid rgba(40, 40, 40, .1);
+	border-radius: .2em .2em 0 0;
+	box-shadow: 0 0 2px 2px rgba(40, 40, 40, .025);
+}
+
+#title {
+	border: none;
+	border-radius: 0;
+}
+
+#title,
+#thoughts {
+	font-size: smaller;
+	padding: 1em 2em;
+}
+
+#text-data {
+	height: 28em;
+	padding: .22em 0 0 0;
+}
+
+#thoughts-data {
+	height: 6em;
+	padding: .22em 0 0 0;
+}
+
+#text:focus,
+#thoughts:focus,
+#title:focus {
+	outline: none;
+}
+
+#write small {
+	display: block;
+	margin: .2em 0 0 0;
+	padding: 0;
+	width: 86%;
+	color: rgb(189, 26, 26);
+}

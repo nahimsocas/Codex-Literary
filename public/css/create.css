@@ -14,7 +14,7 @@ body {
 	background-color: white;
 }
 
-#project_view h2 {
+#project_view>h2 {
 	text-align: center;
 	margin: 0;
 	padding: 1.2em;
@@ -35,7 +35,12 @@ body {
 
 .block-button {
 	display: block;
+	text-align: center;
 	padding: 2em;
+}
+
+.block-button button {
+	cursor: pointer;
 }
 
 .create-story {
@@ -54,4 +59,68 @@ body {
 
 .create-story:active {
 	background-color: rgba(20, 20, 20, 1);
+}
+
+.project--miniview {
+	position: relative;
+	margin: 0 1.8em;
+	padding: 1.2em;
+	margin-bottom: 1.4em;
+	background-color: rgba(222, 222, 222, .5);
+	transition: all 1s ease;
+}
+
+.project--miniview:hover {
+	background-color: rgba(222, 222, 222, 1);
+}
+
+.project--miniview a {
+	display: inline-block;
+	text-decoration: none;
+	color: #282828;
+}
+
+.project--miniview h1 {
+	margin: 0;
+	font-size: 1.8em;
+}
+
+.project--miniview h2 {
+	margin: .4em 0 .8em 0;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.project--miniview p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 90%;
+	margin: 0;
+}
+
+.project--miniview:last-of-type {
+	margin-bottom: 5em;
+}
+
+.project--edit {
+	display: inline-block;
+	position: absolute;
+	text-align: end;
+	right: 25px;
+	bottom: 20px;
+	width: 25%;
+}
+
+.project--edit a {
+	color: rgba(40, 40, 40, .6);
+	transition: all 1s ease;
+}
+
+.project--edit a {
+	margin-left: .22em;
+}
+
+.project--edit a:hover {
+	color: rgba(40, 40, 40, 1);
 }

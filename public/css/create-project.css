@@ -112,6 +112,14 @@ body {
 	outline: none;
 }
 
+#second-box small {
+	display: block;
+	margin: .2em 0 0 0;
+	padding: 0;
+	width: 86%;
+	color: rgb(189, 26, 26);
+}
+
 #submit-section {
 	text-align: center;
 	padding: 2em;
@@ -121,9 +129,10 @@ body {
 #submit-section button {
 	padding: 1em 3.4em;
 	font-size: medium;
+	cursor: pointer;
 	border-radius: .2em;
-	border: 1px solid #282828;
-	background-color: rgba(222, 222, 222, .6);
+	border: 1px solid rgba(40, 40, 40, .4);
+	background-color: rgba(222, 222, 222, 1);
 	transition: all 1s ease;
 }
 

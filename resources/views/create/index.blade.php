@@ -8,18 +8,30 @@
 @endsection
 
 @section('content')
-    {{-- @if (auth()->user()->type == 'reader-writer')
-    @endif --}}
     <main>
         <section id="project_view">
-            <h2>YOUR PROJECTS</h2>
+            <h2>MY PROJECTS</h2>
+            @isset($prueba)
+                {{ var_dump($prueba) }}
+            @endisset
             @isset ($projects)
-                @foreach ($projects as $value)
-                    {{ $value->cover }}
+                @foreach ($projects as $value)            
+                    <article class="project--miniview">
+                        <a href="{{ route('create.archive', $value->url) }}" target="_self">
+                            <h1>{{ $value->title }}</h1>
+                            <h2>Author: {{ $value->author }}</h2>
+                            <p>Synopsis: {{ $value->description }}</p>
+                        </a>
+                        <section class="project--edit">
+                            <a href="{{ route('create.edit', $value->url) }}"><small>Edit</small></a>
+                        </section>
+                    </article>                    
                 @endforeach
-                <a href="{{ route('create.create') }}" class="block-button">
-                    <button type="submit" class="create-story">Create Story</button>
-                </a>
+                <section class="block-button">
+                    <a href="{{ route('create.create') }}">
+                        <button type="submit" class="create-story">Create Story</button>
+                    </a>
+                </section>
             @else
                 <section id="project_view--empty">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -55,9 +67,11 @@
                         </g>
                     </svg>
                     <p>EMPTY</p>
-                    <a href="{{ route('create.create') }}" class="block-button">
-                        <button type="submit" class="create-story">Create Story</button>
-                    </a>
+                    <section class="block-button">
+                        <a href="{{ route('create.create') }}">
+                            <button type="submit" class="create-story">Create Story</button>
+                        </a>
+                    </section>
                 </section>
             @endisset
         </section>

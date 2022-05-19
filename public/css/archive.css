@@ -1,0 +1,165 @@
+body {
+  background-color: rgba(219, 220, 218, .66) !important;
+}
+
+#archive {
+  width: 75%;
+  margin: 0 auto;
+  letter-spacing: .6px;
+  color: rgba(40, 40, 40, .96);
+  background-color: rgba(250, 250, 250, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#archive--img {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  height: 400px;
+  width: 26.5%;
+}
+
+#archive--img img {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+#archive--information {
+  display: inline-block;
+  height: 180px;
+  width: 73%;
+
+}
+
+#archive--information h1 {
+  font-size: 2.2em;
+  margin: .5em 0 .3em 0;
+}
+
+#archive--information h2 {
+  font-size: 1.2em;
+  margin: .5em 0 .3em 0;
+}
+
+#archive--information h3 {
+  display: inline-block;
+  width: 30%;
+  font-size: medium;
+}
+
+#archive--information details {
+  margin-top: 2em;
+}
+
+#archive--information p {
+  width: 88%;
+}
+
+#archive--data {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 1.8em;
+}
+
+#archive--create {
+  background-color: rgba(250, 250, 250, 1);
+  border-bottom: 1px solid rgb(192, 192, 192);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+#archive--create button {
+  padding: 1.2em 1.4em;
+  border: none;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgba(212, 239, 242, .6);
+  transition: all 1s ease;
+}
+
+#archive--create button:hover {
+  background-color: wheat;
+}
+
+#archive--db {
+  padding: 1em 1.4em;
+  background-color: rgba(250, 250, 250, 1);
+  border-bottom: 1px solid rgb(192, 192, 192);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+#archive--db-sections {
+  text-align: center;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+#archive--db-sections a {
+  padding: 1em 0;
+  color: #282828;
+}
+
+#archive--db-sections a:last-of-type {
+  margin-left: 1em;
+}
+
+#archive--db-chapters,
+#archive--db-drafts {
+  position: relative;
+  display: none;
+}
+
+#archive--db-chapters {
+  z-index: 1;
+}
+
+#archive--db-drafts {
+  z-index: 2;
+}
+
+#archive--db-chapters:target {
+  display: block;
+  z-index: 1;
+}
+
+#archive--db-chapters:target #archive--db-drafts {
+  display: none;
+  z-index: 2;
+}
+
+#archive--db-drafts:target {
+  display: block;
+  z-index: 1;
+}
+
+#archive--db-drafts:target #archive--db-chapters {
+  display: none;
+  z-index: 2;
+}
+
+.archive--mini {
+  cursor: pointer;
+  padding: .8em;
+  margin: .4em 0;
+  background-color: rgba(222, 222, 222, .5);
+  transition: all 1s ease;
+}
+
+.archive--mini:first-of-type {
+  margin-bottom: .4em;
+  margin-top: 0;
+}
+
+.archive--mini:last-of-type {
+  margin-bottom: 0;
+  margin-top: .4em;
+}
+
+.archive--mini:hover {
+  background-color: rgba(222, 222, 222, 1);
+}
