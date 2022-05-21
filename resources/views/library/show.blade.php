@@ -3,8 +3,8 @@
 @section('title', ucwords(strtolower($content[0]->title)))
 
 @section('css, javascript')
-<link href="{{ asset('css/small-page.css') }}" rel="stylesheet">
-<link href="{{ asset('css/library-inside.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/small-page.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/library-inside.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')

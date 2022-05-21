@@ -43,10 +43,6 @@ buttonSection.addEventListener('click', (event) => {
 	backgroundImage.style.backgroundSize = "cover";
 });
 
-// setInterval(() => {
-
-// }, 8000);
-
 setInterval(() => {
 	let eventIndex;
 	[...buttonSection.children].forEach((element, index) => {
@@ -64,4 +60,4 @@ setInterval(() => {
 	buttonSection.children[eventIndex].classList.add('current_slideshow');
 	backgroundImage.style.background = backgroundImages[eventIndex + 1];
 	backgroundImage.style.backgroundSize = "cover";
-}, 8000);
+}, 4000);

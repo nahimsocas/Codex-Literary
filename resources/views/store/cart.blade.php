@@ -1,36 +1,37 @@
 @extends('layouts.template')
 
-@section('title', 'Create')
-
+@section('title', 'Cart')
+    
 @section('css, javascript')
+    <script type="text/javascript" src="{{ asset('js/store.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
     <link rel="stylesheet" href="{{ asset('css/small-page.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/create.css') }}">
 @endsection
 
 @section('content')
     <main>
-        <section id="project_view">
-            <h2>MY PROJECTS</h2>
-            @isset ($projects)
-                @foreach ($projects as $value)            
-                    <article class="project--miniview">
+        <section id="cart">
+            <h2>MY CART</h2>
+            @isset ($items)
+                @foreach ($items as $value)            
+                    <article class="cart--miniview">
                         <a href="{{ route('create.archive', $value->url) }}" target="_self">
                             <h1>{{ $value->title }}</h1>
                             <h2>Author: {{ $value->author }}</h2>
                             <p>Synopsis: {{ $value->description }}</p>
                         </a>
-                        <section class="project--edit">
-                            <a href="{{ route('create.edit', $value->url) }}"><small>Edit</small></a>
+                        <section class="cart--delete">
+                            <a href="{{ route('create.edit', $value->url) }}"><small>x</small></a>
                         </section>
                     </article>                    
                 @endforeach
-                <section class="block-button">
-                    <a href="{{ route('create.create') }}">
-                        <button type="submit" class="create-story">Create Story</button>
+                <section class="cart-button">
+                    <a href="{{ route('store.index') }}">
+                        <button type="submit" class="to-store">Store</button>
                     </a>
                 </section>
             @else
-                <section id="project_view--empty">
+                <section id="cart--empty">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 487.925 487.925" style="enable-background:new 0 0 487.925 487.925;" xml:space="preserve">
                         <title>EMPTY</title>
@@ -65,8 +66,8 @@
                     </svg>
                     <p>EMPTY</p>
                     <section class="block-button">
-                        <a href="{{ route('create.create') }}">
-                            <button type="submit" class="create-story">Create Story</button>
+                        <a href="{{ route('store.index') }}">
+                            <button type="submit" class="to-store">Store</button>
                         </a>
                     </section>
                 </section>

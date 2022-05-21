@@ -11,7 +11,7 @@
     <main>
         <section id="create_project">
             <h2>EDIT {{ $edit->title }}</h2>
-            <form action="{{ route('create.update', $edit) }}" method="POST">
+            <form action="{{ route('create.update', $update) }}" method="POST">
                 @csrf @method('PATCH')
                 <section id="cover-section">
                     <label for="cover" class="section-label">COVER</label>

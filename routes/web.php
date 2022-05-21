@@ -7,6 +7,7 @@ use App\Http\Controllers\CreateController;
 use App\Http\Controllers\CreateIntermediateController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LibraryController;
+use App\Http\Controllers\StoreController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,14 @@ Route::controller(LibraryController::class)->group(function() {
     Route::get('/library/{url}', 'show')->name('library.show');
 });
 
+Route::view('/store', 'store.index')->name('store.index');
+Route::controller(StoreController::class)->group(function() {
+    Route::get('/store/cart', 'index')->name('store.cart');
+    Route::post('/store/cart', 'store')->name('store.store');
+});
+
+
+
 Route::controller(CreateBasicController::class)->middleware(['auth', 'verified'])->group(function() {
     Route::get('/create', 'index')->name('create.index');
     Route::get('/create/new-story', 'create')->name('create.create');
@@ -40,6 +49,8 @@ Route::controller(CreateBasicController::class)->middleware(['auth', 'verified']
 Route::controller(CreateIntermediateController::class)->middleware(['auth', 'verified'])->group(function() {
     Route::get('/create/{url}/view', 'index')->name('create.archive');
     Route::get('/create/{url}/new-chapter', 'create')->name('create.chapter');
+    Route::get('/create/{url}/{id}/{type}/edit', 'edit')->name('create.chapteredit');
+    Route::patch('/create/{url}/view', 'update')->name('create.chapterupdate');
     Route::post('/create/{url}/view', 'store')->name('create.chapterstore');
 });
 

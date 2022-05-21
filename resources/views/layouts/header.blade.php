@@ -10,7 +10,12 @@
             <a href="{{ route('library.index') }}">LIBRARY</a>
         </li>
         <li>
-            <a href="#">STORE</a>
+            <a href="{{ route('store.index') }}">STORE</a>
+            <ul id="store_list">
+                <li>
+                    <a href="{{ route('store.cart') }}">CART</a>
+                </li>
+            </ul>
         </li>
         @guest
             <li>

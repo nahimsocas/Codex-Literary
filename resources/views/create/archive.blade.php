@@ -39,6 +39,9 @@
                     @if ( $chapters )
                         @foreach ($chapters as $value)
                             <p class="archive--mini">Chapter - {{ $value->chapters . '. ' . $value->title }}</p>
+                            <a href="{{ route('create.chapteredit', [$url, $value->id, $type = 'chapter']) }}">
+                                <small class="archive--mini--edit">Edit</small>
+                            </a>
                         @endforeach
                     @else
                         <p class="archive--mini" style="opacity: .6; text-align: center;">EMPTY</p>
@@ -47,7 +50,10 @@
                 <section id="archive--db-drafts">
                     @if ( $drafts )
                         @foreach ($drafts as $value)
-                            <p class="archive--mini">Draft - {{ $value->title }}</p>  
+                            <p class="archive--mini">Draft - {{ $value->title }}</p>
+                            <a href="{{ route('create.chapteredit', [$url, $value->id, $type = 'draft']) }}">
+                                <small class="archive--mini--edit">Edit</small>
+                            </a>
                         @endforeach
                     @else
                         <p class="archive--mini" style="opacity: .6; text-align: center;">EMPTY</p>

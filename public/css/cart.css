@@ -2,7 +2,7 @@ body {
 	background-color: rgba(219, 220, 218, .66) !important;
 }
 
-#project_view {
+#cart {
 	width: 75%;
 	margin: auto;
 	background-color: rgba(250, 250, 250, 1);
@@ -10,26 +10,26 @@ body {
 	transition: all 2s ease;
 }
 
-#project_view:hover {
+#cart:hover {
 	background-color: white;
 }
 
-#project_view>h2 {
+#cart>h2 {
 	text-align: center;
 	margin: 0;
 	padding: 1.2em;
 }
 
-#project_view--empty {
+#cart--empty {
 	text-align: center;
 }
 
-#project_view--empty svg {
+#cart--empty svg {
 	width: 16%;
 	opacity: 18%;
 }
 
-#project_view--empty p {
+#cart--empty p {
 	opacity: 60%;
 }
 
@@ -43,7 +43,7 @@ body {
 	cursor: pointer;
 }
 
-.create-story {
+.to-store {
 	padding: 1em 2.8em;
 	font-size: medium;
 	border-radius: .2em;
@@ -53,15 +53,15 @@ body {
 	transition: all 1s ease;
 }
 
-.create-story:hover {
+.to-store:hover {
 	background-color: rgba(40, 40, 40, 1);
 }
 
-.create-story:active {
+.to-store:active {
 	background-color: rgba(20, 20, 20, 1);
 }
 
-.project--miniview {
+.cart--miniview {
 	position: relative;
 	margin: 0 1.8em;
 	padding: 1.2em;
@@ -70,29 +70,29 @@ body {
 	transition: all 1s ease;
 }
 
-.project--miniview:hover {
+.cart--miniview:hover {
 	background-color: rgba(222, 222, 222, 1);
 }
 
-.project--miniview a {
+.cart--miniview a {
 	display: inline-block;
 	width: 72.5%;
 	text-decoration: none;
 	color: #282828;
 }
 
-.project--miniview h1 {
+.cart--miniview h1 {
 	margin: 0;
 	font-size: 1.8em;
 }
 
-.project--miniview h2 {
+.cart--miniview h2 {
 	margin: .4em 0 .8em 0;
 	font-size: 1em;
 	font-weight: 500;
 }
 
-.project--miniview p {
+.cart--miniview p {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -100,11 +100,11 @@ body {
 	margin: 0;
 }
 
-.project--miniview:last-of-type {
+.cart--miniview:last-of-type {
 	margin-bottom: 5em;
 }
 
-.project--edit {
+.cart--edit {
 	display: inline-block;
 	position: absolute;
 	text-align: end;
@@ -113,15 +113,15 @@ body {
 	width: 25%;
 }
 
-.project--edit a {
+.cart--edit a {
 	color: rgba(40, 40, 40, .6);
 	transition: all 1s ease;
 }
 
-.project--edit a {
+.cart--edit a {
 	margin-left: .22em;
 }
 
-.project--edit a:hover {
+.cart--edit a:hover {
 	color: rgba(40, 40, 40, 1);
 }

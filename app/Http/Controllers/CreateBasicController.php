@@ -5,27 +5,28 @@ namespace App\Http\Controllers;
 use App\Models\Author;
 use App\Models\Codex;
 use App\Models\CodexAuthor;
-use App\Models\CodexGenre;
 use App\Models\Genre;
 use App\Models\Language;
 use Illuminate\Support\Facades\DB;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\DataCollector\RequestDataCollector;
 
 class CreateBasicController extends Controller
 {
     public function index()
     {
         $authorID = Author::where('author', '=', auth()->user()->username)->get();
-        $theID = $authorID[0]->id;
-        $codexAuthor = CodexAuthor::where('authors_id', '=', $theID)->get();
-        if (!count($codexAuthor)) {
+        if ( !count($authorID) ) {
             return view('create.index');
+        } else {
+            $projects = Codex::join('codex_authors', 'codexes.id', '=', 'codexes_id')
+            ->where('authors_id', '=', $authorID[0]->id)
+            ->join('authors', 'authors.id', '=', 'codex_authors.authors_id')
+            ->join('libraries', 'libraries.codexes_id', '=', 'codexes.id')
+            ->select('codexes.cover', 'codexes.title', 'codexes.description', 'codex_authors.*', 'authors.author', 'libraries.url')
+            ->get();
+            return view('create.index', [
+                'projects' => $projects
+            ]);
         }
-        $projects = DB::select("SELECT *, libraries.url  FROM codexes INNER JOIN codex_authors ON (codexes.id = codexes_id AND authors_id = $theID) INNER JOIN authors ON (authors.id = $theID) INNER JOIN libraries ON (libraries.codexes_id = codexes.id)");
-        return view('create.index', [
-            'projects' => $projects
-        ]);
     }
 
     public function edit($url)
@@ -41,7 +42,6 @@ class CreateBasicController extends Controller
         ->join('genres', 'genres.id', '=', 'codex_genres.genres_id')
         ->select('codex_authors.*', 'codexes.*', 'authors.author', 'languages.id', 'codex_genres.genres_id', 'genres.id')
         ->get()->first();
-        //var_dump($edit);
         return view('create.edit', [
             'edit' => $edit,
             'languages' => Language::all(),
@@ -96,7 +96,6 @@ class CreateBasicController extends Controller
     public function update()
     {
         $data = request()->post();
-        var_dump($data);
         $username = auth()->user()->username;
         $title = $data['title'];
         $language = $data['language'];

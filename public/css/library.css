@@ -60,6 +60,7 @@ body {
 
 .lib_codex--information h2 {
 	font-size: medium;
+	font-weight: 500;
 	margin: .5em 0 .3em 0;
 }
 
