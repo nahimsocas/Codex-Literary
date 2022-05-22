@@ -10,14 +10,17 @@ class StoreController extends Controller
 {
     public function index()
     {
-        $items = Store::where('users_id', '=', auth()->user()->id)->get();
-        if ( count($items) ) {
-            return view('store.cart', [
-                'items' => $items
-            ]);
-        } else {
-            return view('store.cart');
+        if (auth()->user()) {
+            $items = Store::where('users_id', '=', auth()->user()->id)->get();
+            if (count($items)) {
+                return view('store.cart', [
+                    'items' => $items
+                ]);
+            } else {
+                return view('store.cart');
+            }
         }
+        return view('store.cart');
     }
 
     public function store()
@@ -27,5 +30,12 @@ class StoreController extends Controller
         DB::insert("INSERT INTO stores (`cover`, `title`, `author`, `category`, `users_id`) VALUES (\"$data[0]\", \"$data[1]\", \"$data[2]\", \"$data[3]\", $userID)");
 
         return redirect()->route('store.index');
+    }
+
+    public function destroy($id)
+    {
+        $delete = Store::where('id', '=', $id)->where('users_id', '=', auth()->user()->id)->delete();
+
+        return redirect()->route('store.cart');
     }
 }

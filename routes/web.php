@@ -7,6 +7,7 @@ use App\Http\Controllers\CreateController;
 use App\Http\Controllers\CreateIntermediateController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LibraryController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\StoreController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -34,8 +35,11 @@ Route::view('/store', 'store.index')->name('store.index');
 Route::controller(StoreController::class)->group(function() {
     Route::get('/store/cart', 'index')->name('store.cart');
     Route::post('/store/cart', 'store')->name('store.store');
+    Route::delete('/store/cart/{id}', 'destroy')->name('cart.delete');
 });
-
+Route::controller(PaymentController::class)->middleware(['auth', 'verified'])->group(function() {
+    Route::get('/store/cart/payment', 'index')->name('store.payment');
+});
 
 
 Route::controller(CreateBasicController::class)->middleware(['auth', 'verified'])->group(function() {

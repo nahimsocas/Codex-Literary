@@ -33,13 +33,13 @@ body {
 	opacity: 60%;
 }
 
-.block-button {
+.cart-button {
 	display: block;
 	text-align: center;
 	padding: 2em;
 }
 
-.block-button button {
+.cart-button button {
 	cursor: pointer;
 }
 
@@ -63,6 +63,7 @@ body {
 
 .cart--miniview {
 	position: relative;
+	height: 120px;
 	margin: 0 1.8em;
 	padding: 1.2em;
 	margin-bottom: 1.4em;
@@ -74,25 +75,47 @@ body {
 	background-color: rgba(222, 222, 222, 1);
 }
 
-.cart--miniview a {
+.cart--img {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 10%;
+	height: 120px;
+}
+
+.cart--img img {
+	display: block;
+	position: absolute;
+	left: 0;
+	margin: 0 auto;
+	max-height: 100%;
+	height: 100%;
+}
+
+.cart--information {
+	display: inline-block;
+	width: 79%;
+}
+
+.cart--information a {
 	display: inline-block;
 	width: 72.5%;
 	text-decoration: none;
 	color: #282828;
 }
 
-.cart--miniview h1 {
+.cart--information h1 {
 	margin: 0;
 	font-size: 1.8em;
 }
 
-.cart--miniview h2 {
-	margin: .4em 0 .8em 0;
+.cart--information h2 {
+	margin: .4em 0 .33em 0;
 	font-size: 1em;
 	font-weight: 500;
 }
 
-.cart--miniview p {
+.cart--information p {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -100,11 +123,15 @@ body {
 	margin: 0;
 }
 
-.cart--miniview:last-of-type {
+.cart--information p:last-of-type {
+	margin-top: 1em;
+}
+
+.cart--information:last-of-type {
 	margin-bottom: 5em;
 }
 
-.cart--edit {
+.cart--delete {
 	display: inline-block;
 	position: absolute;
 	text-align: end;
@@ -113,15 +140,19 @@ body {
 	width: 25%;
 }
 
-.cart--edit a {
+.cart--delete button {
+	font-size: x-large;
+	cursor: pointer;
 	color: rgba(40, 40, 40, .6);
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
 	transition: all 1s ease;
 }
 
-.cart--edit a {
+.cart--delete button {
 	margin-left: .22em;
 }
 
-.cart--edit a:hover {
+.cart--delete button:hover {
 	color: rgba(40, 40, 40, 1);
 }

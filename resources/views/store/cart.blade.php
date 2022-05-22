@@ -5,7 +5,13 @@
 @section('css, javascript')
     <script type="text/javascript" src="{{ asset('js/store.js')}}" defer></script>
     <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/small-page.css') }}">
+    @isset($items)
+        @if (count($items) < 4)
+            <link rel="stylesheet" href="{{ asset('css/small-page.css') }}">    
+        @endif
+    @else
+        <link rel="stylesheet" href="{{ asset('css/small-page.css') }}">
+    @endisset
 @endsection
 
 @section('content')
@@ -15,19 +21,26 @@
             @isset ($items)
                 @foreach ($items as $value)            
                     <article class="cart--miniview">
-                        <a href="{{ route('create.archive', $value->url) }}" target="_self">
+                        <section class="cart--img">
+                            <img src="{{ $value->cover }}" alt="{{ $value->title }}">
+                        </section>
+                        <section class="cart--information">
                             <h1>{{ $value->title }}</h1>
                             <h2>Author: {{ $value->author }}</h2>
-                            <p>Synopsis: {{ $value->description }}</p>
-                        </a>
-                        <section class="cart--delete">
-                            <a href="{{ route('create.edit', $value->url) }}"><small>x</small></a>
+                            <p>Category: {{ $value->category }}</p>
+                            <p>Price: 10&euro;</p>
+                            <section class="cart--delete">
+                                <form action="{{ route('cart.delete', $value->id) }}" method="POST">
+                                    @csrf @method('DELETE')
+                                    <button type="submit"><small>&#10539;</small></button>
+                                </form>
+                            </section>
                         </section>
                     </article>                    
                 @endforeach
                 <section class="cart-button">
-                    <a href="{{ route('store.index') }}">
-                        <button type="submit" class="to-store">Store</button>
+                    <a href="{{ route('store.payment') }}">
+                        <button type="submit" class="to-store">Buy</button>
                     </a>
                 </section>
             @else
@@ -65,7 +78,7 @@
                         </g>
                     </svg>
                     <p>EMPTY</p>
-                    <section class="block-button">
+                    <section class="cart-button">
                         <a href="{{ route('store.index') }}">
                             <button type="submit" class="to-store">Store</button>
                         </a>
