@@ -1,8 +1,6 @@
 const articlesStore = document.getElementById('store');
 const allowCopy = document.getElementById('cart');
 
-console.log(allowCopy.value);
-
 fetch('https://gutendex.com/books/?copyright=false')
 	.then(response => response.json())
 	.then(content => {
@@ -32,7 +30,7 @@ fetch('https://gutendex.com/books/?copyright=false')
 								<section class="books--buttons">
 									<p>Cart</p>
 									<button type="submit">HARDCOPY</button>
-									<input type="hidden" name="data" value="${element.formats['image/jpeg']}|${element.title}|${element.authors[0].name}|${category}">
+									<input type="hidden" name="data" value="${element.id}|${element.formats['image/jpeg']}|${element.title}|${element.authors[0].name}|${category}">
 									<p>Download</p>
 									<a href="${element.formats['application/epub+zip']}">EPUB</a>
 									<a href="${element.formats['application/x-mobipocket-ebook']}">MOBI</a>

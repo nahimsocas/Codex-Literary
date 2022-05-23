@@ -1,11 +1,8 @@
 <?php
 
-use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CreateBasicController;
-use App\Http\Controllers\CreateController;
 use App\Http\Controllers\CreateIntermediateController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LibraryController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\StoreController;
@@ -41,21 +38,20 @@ Route::controller(PaymentController::class)->middleware(['auth', 'verified'])->g
     Route::get('/store/cart/payment', 'index')->name('store.payment');
 });
 
-
 Route::controller(CreateBasicController::class)->middleware(['auth', 'verified'])->group(function() {
     Route::get('/create', 'index')->name('create.index');
     Route::get('/create/new-story', 'create')->name('create.create');
-    Route::get('/create/{url}/edit', 'edit')->name('create.edit');
-    Route::patch('/create/{update}', 'update')->name('create.update');
+    Route::delete('/create/{url}/{CLnumber}/delete', 'destroy')->name('create.destroy');
+    Route::get('/create/{url}/{CLnumber}/edit', 'edit')->name('create.edit');
+    Route::patch('/create/{url}/{CLnumber}', 'update')->name('create.update');
     Route::post('/create', 'store')->name('create.store');
 });
-
 Route::controller(CreateIntermediateController::class)->middleware(['auth', 'verified'])->group(function() {
-    Route::get('/create/{url}/view', 'index')->name('create.archive');
-    Route::get('/create/{url}/new-chapter', 'create')->name('create.chapter');
-    Route::get('/create/{url}/{id}/{type}/edit', 'edit')->name('create.chapteredit');
-    Route::patch('/create/{url}/view', 'update')->name('create.chapterupdate');
-    Route::post('/create/{url}/view', 'store')->name('create.chapterstore');
+    Route::get('/create/{url}/{CLnumber}/view', 'index')->name('create.archive');
+    Route::get('/create/{url}/{CLnumber}/new-chapter', 'create')->name('create.chapter');
+    Route::get('/create/{url}/{CLnumber}/{id}/{type}/edit', 'edit')->name('create.chapteredit');
+    Route::patch('/create/{url}/{CLnumber}/view', 'update')->name('create.chapterupdate');
+    Route::post('/create/{url}/{CLnumber}/view', 'store')->name('create.chapterstore');
 });
 
 Route::view('/login', 'login')->name('login');

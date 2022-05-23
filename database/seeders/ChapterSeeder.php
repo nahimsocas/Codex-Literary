@@ -60,8 +60,7 @@ class ChapterSeeder extends Seeder
                 <p>My gut twisted, and I moved quicker. I needed a drink.</p>
             ',
             'chapters' => 1,
-            'codexes_id' => 2,
-            'authors_id' => 2
+            'codex_authors' => 2
         ]);
     }
 }

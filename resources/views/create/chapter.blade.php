@@ -12,7 +12,7 @@
     <main>
         <section id="write">
             <p>. . .</p>
-            <form action="{{ route('create.chapterstore', $url) }}" method="POST" name="chapters" id="chapters">
+            <form action="{{ route('create.chapterstore', [$url, hash('crc32', $CLnumber, false)]) }}" method="POST" name="chapters" id="chapters">
                 @csrf
                 <section id="flex-data">
                     <section id="input-data">

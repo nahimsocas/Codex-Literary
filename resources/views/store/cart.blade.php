@@ -3,10 +3,9 @@
 @section('title', 'Cart')
     
 @section('css, javascript')
-    <script type="text/javascript" src="{{ asset('js/store.js')}}" defer></script>
     <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
     @isset($items)
-        @if (count($items) < 4)
+        @if (count($items) < 3)
             <link rel="stylesheet" href="{{ asset('css/small-page.css') }}">    
         @endif
     @else
@@ -28,7 +27,8 @@
                             <h1>{{ $value->title }}</h1>
                             <h2>Author: {{ $value->author }}</h2>
                             <p>Category: {{ $value->category }}</p>
-                            <p>Price: 10&euro;</p>
+                            <p>Quantity: {{ $value->quantity }}</p>
+                            <p>Price: {{ 10 * $value->quantity }}&euro;</p>
                             <section class="cart--delete">
                                 <form action="{{ route('cart.delete', $value->id) }}" method="POST">
                                     @csrf @method('DELETE')

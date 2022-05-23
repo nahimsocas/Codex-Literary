@@ -18,1253 +18,1253 @@ class CountrySeeder extends Seeder
         DB::table('countries')->insert([
             [
                 'code' => "AD",
+                'native' => "Andorra",
                 'country' => "Andorra",
-                'native' => "Andorra"
             ],
             [
                 'code' => "AE",
+                'native' => "دولة الإمارات العربية المتحدة",
                 'country' => "United Arab Emirates",
-                'native' => "دولة الإمارات العربية المتحدة"
             ],
             [
                 'code' => "AF",
+                'native' => "افغانستان",
                 'country' => "Afghanistan",
-                'native' => "افغانستان"
             ],
             [
                 'code' => "AG",
+                'native' => "Antigua and Barbuda",
                 'country' => "Antigua and Barbuda",
-                'native' => "Antigua and Barbuda"
             ],
             [
                 'code' => "AI",
+                'native' => "Anguilla",
                 'country' => "Anguilla",
-                'native' => "Anguilla"
             ],
             [
                 'code' => "AL",
+                'native' => "Shqipëria",
                 'country' => "Albania",
-                'native' => "Shqipëria"
             ],
             [
                 'code' => "AM",
+                'native' => "Հայաստան",
                 'country' => "Armenia",
-                'native' => "Հայաստան"
             ],
             [
                 'code' => "AO",
+                'native' => "Angola",
                 'country' => "Angola",
-                'native' => "Angola"
             ],
             [
                 'code' => "AQ",
+                'native' => "Antarctica",
                 'country' => "Antarctica",
-                'native' => "Antarctica"
             ],
             [
                 'code' => "AR",
+                'native' => "Argentina",
                 'country' => "Argentina",
-                'native' => "Argentina"
             ],
             [
                 'code' => "AS",
+                'native' => "American Samoa",
                 'country' => "American Samoa",
-                'native' => "American Samoa"
             ],
             [
                 'code' => "AT",
+                'native' => "Österreich",
                 'country' => "Austria",
-                'native' => "Österreich"
             ],
             [
                 'code' => "AU",
+                'native' => "Australia",
                 'country' => "Australia",
-                'native' => "Australia"
             ],
             [
                 'code' => "AW",
+                'native' => "Aruba",
                 'country' => "Aruba",
-                'native' => "Aruba"
             ],
             [
                 'code' => "AX",
+                'native' => "Åland",
                 'country' => "Åland",
-                'native' => "Åland"
             ],
             [
                 'code' => "AZ",
+                'native' => "Azərbaycan",
                 'country' => "Azerbaijan",
-                'native' => "Azərbaycan"
             ],
             [
                 'code' => "BA",
+                'native' => "Bosna i Hercegovina",
                 'country' => "Bosnia and Herzegovina",
-                'native' => "Bosna i Hercegovina"
             ],
             [
                 'code' => "BB",
+                'native' => "Barbados",
                 'country' => "Barbados",
-                'native' => "Barbados"
             ],
             [
                 'code' => "BD",
+                'native' => "Bangladesh",
                 'country' => "Bangladesh",
-                'native' => "Bangladesh"
             ],
             [
                 'code' => "BE",
+                'native' => "België",
                 'country' => "Belgium",
-                'native' => "België"
             ],
             [
                 'code' => "BF",
+                'native' => "Burkina Faso",
                 'country' => "Burkina Faso",
-                'native' => "Burkina Faso"
             ],
             [
                 'code' => "BG",
+                'native' => "България",
                 'country' => "Bulgaria",
-                'native' => "България"
             ],
             [
                 'code' => "BH",
+                'native' => "‏البحرين",
                 'country' => "Bahrain",
-                'native' => "‏البحرين"
             ],
             [
                 'code' => "BI",
+                'native' => "Burundi",
                 'country' => "Burundi",
-                'native' => "Burundi"
             ],
             [
                 'code' => "BJ",
+                'native' => "Bénin",
                 'country' => "Benin",
-                'native' => "Bénin"
             ],
             [
                 'code' => "BL",
+                'native' => "Saint-Barthélemy",
                 'country' => "Saint Barthélemy",
-                'native' => "Saint-Barthélemy"
             ],
             [
                 'code' => "BM",
+                'native' => "Bermuda",
                 'country' => "Bermuda",
-                'native' => "Bermuda"
             ],
             [
                 'code' => "BN",
+                'native' => "Negara Brunei Darussalam",
                 'country' => "Brunei",
-                'native' => "Negara Brunei Darussalam"
             ],
             [
                 'code' => "BO",
+                'native' => "Bolivia",
                 'country' => "Bolivia",
-                'native' => "Bolivia"
             ],
             [
                 'code' => "BQ",
+                'native' => "Bonaire",
                 'country' => "Bonaire",
-                'native' => "Bonaire"
             ],
             [
                 'code' => "BR",
+                'native' => "Brasil",
                 'country' => "Brazil",
-                'native' => "Brasil"
             ],
             [
                 'code' => "BS",
+                'native' => "Bahamas",
                 'country' => "Bahamas",
-                'native' => "Bahamas"
             ],
             [
                 'code' => "BT",
+                'native' => "ʼbrug-yul",
                 'country' => "Bhutan",
-                'native' => "ʼbrug-yul"
             ],
             [
                 'code' => "BV",
+                'native' => "Bouvetøya",
                 'country' => "Bouvet Island",
-                'native' => "Bouvetøya"
             ],
             [
                 'code' => "BW",
+                'native' => "Botswana",
                 'country' => "Botswana",
-                'native' => "Botswana"
             ],
             [
                 'code' => "BY",
+                'native' => "Белару́сь",
                 'country' => "Belarus",
-                'native' => "Белару́сь"
             ],
             [
                 'code' => "BZ",
+                'native' => "Belize",
                 'country' => "Belize",
-                'native' => "Belize"
             ],
             [
                 'code' => "CA",
+                'native' => "Canada",
                 'country' => "Canada",
-                'native' => "Canada"
             ],
             [
                 'code' => "CC",
+                'native' => "Cocos (Keeling) Islands",
                 'country' => "Cocos [Keeling] Islands",
-                'native' => "Cocos (Keeling) Islands"
             ],
             [
                 'code' => "CD",
+                'native' => "République démocratique du Congo",
                 'country' => "Democratic Republic of the Congo",
-                'native' => "République démocratique du Congo"
             ],
             [
                 'code' => "CF",
+                'native' => "Ködörösêse tî Bêafrîka",
                 'country' => "Central African Republic",
-                'native' => "Ködörösêse tî Bêafrîka"
             ],
             [
                 'code' => "CG",
+                'native' => "République du Congo",
                 'country' => "Republic of the Congo",
-                'native' => "République du Congo"
             ],
             [
                 'code' => "CH",
+                'native' => "Schweiz",
                 'country' => "Switzerland",
-                'native' => "Schweiz"
             ],
             [
                 'code' => "CI",
+                'native' => "Côte d'Ivoire",
                 'country' => "Ivory Coast",
-                'native' => "Côte d'Ivoire"
             ],
             [
                 'code' => "CK",
+                'native' => "Cook Islands",
                 'country' => "Cook Islands",
-                'native' => "Cook Islands"
             ],
             [
                 'code' => "CL",
+                'native' => "Chile",
                 'country' => "Chile",
-                'native' => "Chile"
             ],
             [
                 'code' => "CM",
+                'native' => "Cameroon",
                 'country' => "Cameroon",
-                'native' => "Cameroon"
             ],
             [
                 'code' => "CN",
+                'native' => "中国",
                 'country' => "China",
-                'native' => "中国"
             ],
             [
                 'code' => "CO",
+                'native' => "Colombia",
                 'country' => "Colombia",
-                'native' => "Colombia"
             ],
             [
                 'code' => "CR",
+                'native' => "Costa Rica",
                 'country' => "Costa Rica",
-                'native' => "Costa Rica"
             ],
             [
                 'code' => "CU",
+                'native' => "Cuba",
                 'country' => "Cuba",
-                'native' => "Cuba"
             ],
             [
                 'code' => "CV",
+                'native' => "Cabo Verde",
                 'country' => "Cape Verde",
-                'native' => "Cabo Verde"
             ],
             [
                 'code' => "CW",
+                'native' => "Curaçao",
                 'country' => "Curacao",
-                'native' => "Curaçao"
             ],
             [
                 'code' => "CX",
+                'native' => "Christmas Island",
                 'country' => "Christmas Island",
-                'native' => "Christmas Island"
             ],
             [
                 'code' => "CY",
+                'native' => "Κύπρος",
                 'country' => "Cyprus",
-                'native' => "Κύπρος"
             ],
             [
                 'code' => "CZ",
+                'native' => "Česká republika",
                 'country' => "Czech Republic",
-                'native' => "Česká republika"
             ],
             [
                 'code' => "DE",
+                'native' => "Deutschland",
                 'country' => "Germany",
-                'native' => "Deutschland"
             ],
             [
                 'code' => "DJ",
+                'native' => "Djibouti",
                 'country' => "Djibouti",
-                'native' => "Djibouti"
             ],
             [
                 'code' => "DK",
+                'native' => "Danmark",
                 'country' => "Denmark",
-                'native' => "Danmark"
             ],
             [
                 'code' => "DM",
+                'native' => "Dominica",
                 'country' => "Dominica",
-                'native' => "Dominica"
             ],
             [
                 'code' => "DO",
+                'native' => "República Dominicana",
                 'country' => "Dominican Republic",
-                'native' => "República Dominicana"
             ],
             [
                 'code' => "DZ",
+                'native' => "الجزائر",
                 'country' => "Algeria",
-                'native' => "الجزائر"
             ],
             [
                 'code' => "EC",
+                'native' => "Ecuador",
                 'country' => "Ecuador",
-                'native' => "Ecuador"
             ],
             [
                 'code' => "EE",
+                'native' => "Eesti",
                 'country' => "Estonia",
-                'native' => "Eesti"
             ],
             [
                 'code' => "EG",
+                'native' => "مصر‎",
                 'country' => "Egypt",
-                'native' => "مصر‎"
             ],
             [
                 'code' => "EH",
+                'native' => "الصحراء الغربية",
                 'country' => "Western Sahara",
-                'native' => "الصحراء الغربية"
             ],
             [
                 'code' => "ER",
+                'native' => "ኤርትራ",
                 'country' => "Eritrea",
-                'native' => "ኤርትራ"
             ],
             [
                 'code' => "ES",
+                'native' => "España",
                 'country' => "Spain",
-                'native' => "España"
             ],
             [
                 'code' => "ET",
+                'native' => "ኢትዮጵያ",
                 'country' => "Ethiopia",
-                'native' => "ኢትዮጵያ"
             ],
             [
                 'code' => "FI",
+                'native' => "Suomi",
                 'country' => "Finland",
-                'native' => "Suomi"
             ],
             [
                 'code' => "FJ",
+                'native' => "Fiji",
                 'country' => "Fiji",
-                'native' => "Fiji"
             ],
             [
                 'code' => "FK",
+                'native' => "Falkland Islands",
                 'country' => "Falkland Islands",
-                'native' => "Falkland Islands"
             ],
             [
                 'code' => "FM",
+                'native' => "Micronesia",
                 'country' => "Micronesia",
-                'native' => "Micronesia"
             ],
             [
                 'code' => "FO",
+                'native' => "Føroyar",
                 'country' => "Faroe Islands",
-                'native' => "Føroyar"
             ],
             [
                 'code' => "FR",
+                'native' => "France",
                 'country' => "France",
-                'native' => "France"
             ],
             [
                 'code' => "GA",
+                'native' => "Gabon",
                 'country' => "Gabon",
-                'native' => "Gabon"
             ],
             [
                 'code' => "GB",
+                'native' => "United Kingdom",
                 'country' => "United Kingdom",
-                'native' => "United Kingdom"
             ],
             [
                 'code' => "GD",
+                'native' => "Grenada",
                 'country' => "Grenada",
-                'native' => "Grenada"
             ],
             [
                 'code' => "GE",
+                'native' => "საქართველო",
                 'country' => "Georgia",
-                'native' => "საქართველო"
             ],
             [
                 'code' => "GF",
+                'native' => "Guyane française",
                 'country' => "French Guiana",
-                'native' => "Guyane française"
             ],
             [
                 'code' => "GG",
+                'native' => "Guernsey",
                 'country' => "Guernsey",
-                'native' => "Guernsey"
             ],
             [
                 'code' => "GH",
+                'native' => "Ghana",
                 'country' => "Ghana",
-                'native' => "Ghana"
             ],
             [
                 'code' => "GI",
+                'native' => "Gibraltar",
                 'country' => "Gibraltar",
-                'native' => "Gibraltar"
             ],
             [
                 'code' => "GL",
+                'native' => "Kalaallit Nunaat",
                 'country' => "Greenland",
-                'native' => "Kalaallit Nunaat"
             ],
             [
                 'code' => "GM",
+                'native' => "Gambia",
                 'country' => "Gambia",
-                'native' => "Gambia"
             ],
             [
                 'code' => "GN",
+                'native' => "Guinée",
                 'country' => "Guinea",
-                'native' => "Guinée"
             ],
             [
                 'code' => "GP",
+                'native' => "Guadeloupe",
                 'country' => "Guadeloupe",
-                'native' => "Guadeloupe"
             ],
             [
                 'code' => "GQ",
+                'native' => "Guinea Ecuatorial",
                 'country' => "Equatorial Guinea",
-                'native' => "Guinea Ecuatorial"
             ],
             [
                 'code' => "GR",
+                'native' => "Ελλάδα",
                 'country' => "Greece",
-                'native' => "Ελλάδα"
             ],
             [
                 'code' => "GS",
+                'native' => "South Georgia",
                 'country' => "South Georgia and the South Sandwich Islands",
-                'native' => "South Georgia"
             ],
             [
                 'code' => "GT",
+                'native' => "Guatemala",
                 'country' => "Guatemala",
-                'native' => "Guatemala"
             ],
             [
                 'code' => "GU",
+                'native' => "Guam",
                 'country' => "Guam",
-                'native' => "Guam"
             ],
             [
                 'code' => "GW",
+                'native' => "Guiné-Bissau",
                 'country' => "Guinea-Bissau",
-                'native' => "Guiné-Bissau"
             ],
             [
                 'code' => "GY",
+                'native' => "Guyana",
                 'country' => "Guyana",
-                'native' => "Guyana"
             ],
             [
                 'code' => "HK",
+                'native' => "香港",
                 'country' => "Hong Kong",
-                'native' => "香港"
             ],
             [
                 'code' => "HM",
+                'native' => "Heard Island and McDonald Islands",
                 'country' => "Heard Island and McDonald Islands",
-                'native' => "Heard Island and McDonald Islands"
             ],
             [
                 'code' => "HN",
+                'native' => "Honduras",
                 'country' => "Honduras",
-                'native' => "Honduras"
             ],
             [
                 'code' => "HR",
+                'native' => "Hrvatska",
                 'country' => "Croatia",
-                'native' => "Hrvatska"
             ],
             [
                 'code' => "HT",
+                'native' => "Haïti",
                 'country' => "Haiti",
-                'native' => "Haïti"
             ],
             [
                 'code' => "HU",
+                'native' => "Magyarország",
                 'country' => "Hungary",
-                'native' => "Magyarország"
             ],
             [
                 'code' => "ID",
+                'native' => "Indonesia",
                 'country' => "Indonesia",
-                'native' => "Indonesia"
             ],
             [
                 'code' => "IE",
+                'native' => "Éire",
                 'country' => "Ireland",
-                'native' => "Éire"
             ],
             [
                 'code' => "IL",
+                'native' => "יִשְׂרָאֵל",
                 'country' => "Israel",
-                'native' => "יִשְׂרָאֵל"
             ],
             [
                 'code' => "IM",
+                'native' => "Isle of Man",
                 'country' => "Isle of Man",
-                'native' => "Isle of Man"
             ],
             [
                 'code' => "IN",
+                'native' => "भारत",
                 'country' => "India",
-                'native' => "भारत"
             ],
             [
                 'code' => "IO",
+                'native' => "British Indian Ocean Territory",
                 'country' => "British Indian Ocean Territory",
-                'native' => "British Indian Ocean Territory"
             ],
             [
                 'code' => "IQ",
+                'native' => "العراق",
                 'country' => "Iraq",
-                'native' => "العراق"
             ],
             [
                 'code' => "IR",
+                'native' => "ایران",
                 'country' => "Iran",
-                'native' => "ایران"
             ],
             [
                 'code' => "IS",
+                'native' => "Ísland",
                 'country' => "Iceland",
-                'native' => "Ísland"
             ],
             [
                 'code' => "IT",
+                'native' => "Italia",
                 'country' => "Italy",
-                'native' => "Italia"
             ],
             [
                 'code' => "JE",
+                'native' => "Jersey",
                 'country' => "Jersey",
-                'native' => "Jersey"
             ],
             [
                 'code' => "JM",
+                'native' => "Jamaica",
                 'country' => "Jamaica",
-                'native' => "Jamaica"
             ],
             [
                 'code' => "JO",
+                'native' => "الأردن",
                 'country' => "Jordan",
-                'native' => "الأردن"
             ],
             [
                 'code' => "JP",
+                'native' => "日本",
                 'country' => "Japan",
-                'native' => "日本"
             ],
             [
                 'code' => "KE",
+                'native' => "Kenya",
                 'country' => "Kenya",
-                'native' => "Kenya"
             ],
             [
                 'code' => "KG",
+                'native' => "Кыргызстан",
                 'country' => "Kyrgyzstan",
-                'native' => "Кыргызстан"
             ],
             [
                 'code' => "KH",
+                'native' => "Kâmpŭchéa",
                 'country' => "Cambodia",
-                'native' => "Kâmpŭchéa"
             ],
             [
                 'code' => "KI",
+                'native' => "Kiribati",
                 'country' => "Kiribati",
-                'native' => "Kiribati"
             ],
             [
                 'code' => "KM",
+                'native' => "Komori",
                 'country' => "Comoros",
-                'native' => "Komori"
             ],
             [
                 'code' => "KN",
+                'native' => "Saint Kitts and Nevis",
                 'country' => "Saint Kitts and Nevis",
-                'native' => "Saint Kitts and Nevis"
             ],
             [
                 'code' => "KP",
+                'native' => "북한",
                 'country' => "North Korea",
-                'native' => "북한"
             ],
             [
                 'code' => "KR",
+                'native' => "대한민국",
                 'country' => "South Korea",
-                'native' => "대한민국"
             ],
             [
                 'code' => "KW",
+                'native' => "الكويت",
                 'country' => "Kuwait",
-                'native' => "الكويت"
             ],
             [
                 'code' => "KY",
+                'native' => "Cayman Islands",
                 'country' => "Cayman Islands",
-                'native' => "Cayman Islands"
             ],
             [
                 'code' => "KZ",
+                'native' => "Қазақстан",
                 'country' => "Kazakhstan",
-                'native' => "Қазақстан"
             ],
             [
                 'code' => "LA",
+                'native' => "ສປປລາວ",
                 'country' => "Laos",
-                'native' => "ສປປລາວ"
             ],
             [
                 'code' => "LB",
+                'native' => "لبنان",
                 'country' => "Lebanon",
-                'native' => "لبنان"
             ],
             [
                 'code' => "LC",
+                'native' => "Saint Lucia",
                 'country' => "Saint Lucia",
-                'native' => "Saint Lucia"
             ],
             [
                 'code' => "LI",
+                'native' => "Liechtenstein",
                 'country' => "Liechtenstein",
-                'native' => "Liechtenstein"
             ],
             [
                 'code' => "LK",
+                'native' => "śrī laṃkāva",
                 'country' => "Sri Lanka",
-                'native' => "śrī laṃkāva"
             ],
             [
                 'code' => "LR",
+                'native' => "Liberia",
                 'country' => "Liberia",
-                'native' => "Liberia"
             ],
             [
                 'code' => "LS",
+                'native' => "Lesotho",
                 'country' => "Lesotho",
-                'native' => "Lesotho"
             ],
             [
                 'code' => "LT",
+                'native' => "Lietuva",
                 'country' => "Lithuania",
-                'native' => "Lietuva"
             ],
             [
                 'code' => "LU",
+                'native' => "Luxembourg",
                 'country' => "Luxembourg",
-                'native' => "Luxembourg"
             ],
             [
                 'code' => "LV",
+                'native' => "Latvija",
                 'country' => "Latvia",
-                'native' => "Latvija"
             ],
             [
                 'code' => "LY",
+                'native' => "‏ليبيا",
                 'country' => "Libya",
-                'native' => "‏ليبيا"
             ],
             [
                 'code' => "MA",
+                'native' => "المغرب",
                 'country' => "Morocco",
-                'native' => "المغرب"
             ],
             [
                 'code' => "MC",
+                'native' => "Monaco",
                 'country' => "Monaco",
-                'native' => "Monaco"
             ],
             [
                 'code' => "MD",
+                'native' => "Moldova",
                 'country' => "Moldova",
-                'native' => "Moldova"
             ],
             [
                 'code' => "ME",
+                'native' => "Црна Гора",
                 'country' => "Montenegro",
-                'native' => "Црна Гора"
             ],
             [
                 'code' => "MF",
+                'native' => "Saint-Martin",
                 'country' => "Saint Martin",
-                'native' => "Saint-Martin"
             ],
             [
                 'code' => "MG",
+                'native' => "Madagasikara",
                 'country' => "Madagascar",
-                'native' => "Madagasikara"
             ],
             [
                 'code' => "MH",
+                'native' => "M̧ajeļ",
                 'country' => "Marshall Islands",
-                'native' => "M̧ajeļ"
             ],
             [
                 'code' => "MK",
+                'native' => "Северна Македонија",
                 'country' => "North Macedonia",
-                'native' => "Северна Македонија"
             ],
             [
                 'code' => "ML",
+                'native' => "Mali",
                 'country' => "Mali",
-                'native' => "Mali"
             ],
             [
                 'code' => "MM",
+                'native' => "မြန်မာ",
                 'country' => "Myanmar [Burma]",
-                'native' => "မြန်မာ"
             ],
             [
                 'code' => "MN",
+                'native' => "Монгол улс",
                 'country' => "Mongolia",
-                'native' => "Монгол улс"
             ],
             [
                 'code' => "MO",
+                'native' => "澳門",
                 'country' => "Macao",
-                'native' => "澳門"
             ],
             [
                 'code' => "MP",
+                'native' => "Northern Mariana Islands",
                 'country' => "Northern Mariana Islands",
-                'native' => "Northern Mariana Islands"
             ],
             [
                 'code' => "MQ",
+                'native' => "Martinique",
                 'country' => "Martinique",
-                'native' => "Martinique"
             ],
             [
                 'code' => "MR",
+                'native' => "موريتانيا",
                 'country' => "Mauritania",
-                'native' => "موريتانيا"
             ],
             [
                 'code' => "MS",
+                'native' => "Montserrat",
                 'country' => "Montserrat",
-                'native' => "Montserrat"
             ],
             [
                 'code' => "MT",
+                'native' => "Malta",
                 'country' => "Malta",
-                'native' => "Malta"
             ],
             [
                 'code' => "MU",
+                'native' => "Maurice",
                 'country' => "Mauritius",
-                'native' => "Maurice"
             ],
             [
                 'code' => "MV",
+                'native' => "Maldives",
                 'country' => "Maldives",
-                'native' => "Maldives"
             ],
             [
                 'code' => "MW",
+                'native' => "Malawi",
                 'country' => "Malawi",
-                'native' => "Malawi"
             ],
             [
                 'code' => "MX",
+                'native' => "México",
                 'country' => "Mexico",
-                'native' => "México"
             ],
             [
                 'code' => "MY",
+                'native' => "Malaysia",
                 'country' => "Malaysia",
-                'native' => "Malaysia"
             ],
             [
                 'code' => "MZ",
+                'native' => "Moçambique",
                 'country' => "Mozambique",
-                'native' => "Moçambique"
             ],
             [
                 'code' => "NA",
+                'native' => "Namibia",
                 'country' => "Namibia",
-                'native' => "Namibia"
             ],
             [
                 'code' => "NC",
+                'native' => "Nouvelle-Calédonie",
                 'country' => "New Caledonia",
-                'native' => "Nouvelle-Calédonie"
             ],
             [
                 'code' => "NE",
+                'native' => "Niger",
                 'country' => "Niger",
-                'native' => "Niger"
             ],
             [
                 'code' => "NF",
+                'native' => "Norfolk Island",
                 'country' => "Norfolk Island",
-                'native' => "Norfolk Island"
             ],
             [
                 'code' => "NG",
+                'native' => "Nigeria",
                 'country' => "Nigeria",
-                'native' => "Nigeria"
             ],
             [
                 'code' => "NI",
+                'native' => "Nicaragua",
                 'country' => "Nicaragua",
-                'native' => "Nicaragua"
             ],
             [
                 'code' => "NL",
+                'native' => "Nederland",
                 'country' => "Netherlands",
-                'native' => "Nederland"
             ],
             [
                 'code' => "NO",
+                'native' => "Norge",
                 'country' => "Norway",
-                'native' => "Norge"
             ],
             [
                 'code' => "NP",
+                'native' => "नपल",
                 'country' => "Nepal",
-                'native' => "नपल"
             ],
             [
                 'code' => "NR",
+                'native' => "Nauru",
                 'country' => "Nauru",
-                'native' => "Nauru"
             ],
             [
                 'code' => "NU",
+                'native' => "Niuē",
                 'country' => "Niue",
-                'native' => "Niuē"
             ],
             [
                 'code' => "NZ",
+                'native' => "New Zealand",
                 'country' => "New Zealand",
-                'native' => "New Zealand"
             ],
             [
                 'code' => "OM",
+                'native' => "عمان",
                 'country' => "Oman",
-                'native' => "عمان"
             ],
             [
                 'code' => "PA",
+                'native' => "Panamá",
                 'country' => "Panama",
-                'native' => "Panamá"
             ],
             [
                 'code' => "PE",
+                'native' => "Perú",
                 'country' => "Peru",
-                'native' => "Perú"
             ],
             [
                 'code' => "PF",
+                'native' => "Polynésie française",
                 'country' => "French Polynesia",
-                'native' => "Polynésie française"
             ],
             [
                 'code' => "PG",
+                'native' => "Papua Niugini",
                 'country' => "Papua New Guinea",
-                'native' => "Papua Niugini"
             ],
             [
                 'code' => "PH",
+                'native' => "Pilipinas",
                 'country' => "Philippines",
-                'native' => "Pilipinas"
             ],
             [
                 'code' => "PK",
+                'native' => "Pakistan",
                 'country' => "Pakistan",
-                'native' => "Pakistan"
             ],
             [
                 'code' => "PL",
+                'native' => "Polska",
                 'country' => "Poland",
-                'native' => "Polska"
             ],
             [
                 'code' => "PM",
+                'native' => "Saint-Pierre-et-Miquelon",
                 'country' => "Saint Pierre and Miquelon",
-                'native' => "Saint-Pierre-et-Miquelon"
             ],
             [
                 'code' => "PN",
+                'native' => "Pitcairn Islands",
                 'country' => "Pitcairn Islands",
-                'native' => "Pitcairn Islands"
             ],
             [
                 'code' => "PR",
+                'native' => "Puerto Rico",
                 'country' => "Puerto Rico",
-                'native' => "Puerto Rico"
             ],
             [
                 'code' => "PS",
+                'native' => "فلسطين",
                 'country' => "Palestine",
-                'native' => "فلسطين"
             ],
             [
                 'code' => "PT",
+                'native' => "Portugal",
                 'country' => "Portugal",
-                'native' => "Portugal"
             ],
             [
                 'code' => "PW",
+                'native' => "Palau",
                 'country' => "Palau",
-                'native' => "Palau"
             ],
             [
                 'code' => "PY",
+                'native' => "Paraguay",
                 'country' => "Paraguay",
-                'native' => "Paraguay"
             ],
             [
                 'code' => "QA",
+                'native' => "قطر",
                 'country' => "Qatar",
-                'native' => "قطر"
             ],
             [
                 'code' => "RE",
+                'native' => "La Réunion",
                 'country' => "Réunion",
-                'native' => "La Réunion"
             ],
             [
                 'code' => "RO",
+                'native' => "România",
                 'country' => "Romania",
-                'native' => "România"
             ],
             [
                 'code' => "RS",
+                'native' => "Србија",
                 'country' => "Serbia",
-                'native' => "Србија"
             ],
             [
                 'code' => "RU",
+                'native' => "Россия",
                 'country' => "Russia",
-                'native' => "Россия"
             ],
             [
                 'code' => "RW",
+                'native' => "Rwanda",
                 'country' => "Rwanda",
-                'native' => "Rwanda"
             ],
             [
                 'code' => "SA",
+                'native' => "العربية السعودية",
                 'country' => "Saudi Arabia",
-                'native' => "العربية السعودية"
             ],
             [
                 'code' => "SB",
+                'native' => "Solomon Islands",
                 'country' => "Solomon Islands",
-                'native' => "Solomon Islands"
             ],
             [
                 'code' => "SC",
+                'native' => "Seychelles",
                 'country' => "Seychelles",
-                'native' => "Seychelles"
             ],
             [
                 'code' => "SD",
+                'native' => "السودان",
                 'country' => "Sudan",
-                'native' => "السودان"
             ],
             [
                 'code' => "SE",
+                'native' => "Sverige",
                 'country' => "Sweden",
-                'native' => "Sverige"
             ],
             [
                 'code' => "SG",
+                'native' => "Singapore",
                 'country' => "Singapore",
-                'native' => "Singapore"
             ],
             [
                 'code' => "SH",
+                'native' => "Saint Helena",
                 'country' => "Saint Helena",
-                'native' => "Saint Helena"
             ],
             [
                 'code' => "SI",
+                'native' => "Slovenija",
                 'country' => "Slovenia",
-                'native' => "Slovenija"
             ],
             [
                 'code' => "SJ",
+                'native' => "Svalbard og Jan Mayen",
                 'country' => "Svalbard and Jan Mayen",
-                'native' => "Svalbard og Jan Mayen"
             ],
             [
                 'code' => "SK",
+                'native' => "Slovensko",
                 'country' => "Slovakia",
-                'native' => "Slovensko"
             ],
             [
                 'code' => "SL",
+                'native' => "Sierra Leone",
                 'country' => "Sierra Leone",
-                'native' => "Sierra Leone"
             ],
             [
                 'code' => "SM",
+                'native' => "San Marino",
                 'country' => "San Marino",
-                'native' => "San Marino"
             ],
             [
                 'code' => "SN",
+                'native' => "Sénégal",
                 'country' => "Senegal",
-                'native' => "Sénégal"
             ],
             [
                 'code' => "SO",
+                'native' => "Soomaaliya",
                 'country' => "Somalia",
-                'native' => "Soomaaliya"
             ],
             [
                 'code' => "SR",
+                'native' => "Suriname",
                 'country' => "Suriname",
-                'native' => "Suriname"
             ],
             [
                 'code' => "SS",
+                'native' => "South Sudan",
                 'country' => "South Sudan",
-                'native' => "South Sudan"
             ],
             [
                 'code' => "ST",
+                'native' => "São Tomé e Príncipe",
                 'country' => "São Tomé and Príncipe",
-                'native' => "São Tomé e Príncipe"
             ],
             [
                 'code' => "SV",
+                'native' => "El Salvador",
                 'country' => "El Salvador",
-                'native' => "El Salvador"
             ],
             [
                 'code' => "SX",
+                'native' => "Sint Maarten",
                 'country' => "Sint Maarten",
-                'native' => "Sint Maarten"
             ],
             [
                 'code' => "SY",
+                'native' => "سوريا",
                 'country' => "Syria",
-                'native' => "سوريا"
             ],
             [
                 'code' => "SZ",
+                'native' => "Swaziland",
                 'country' => "Swaziland",
-                'native' => "Swaziland"
             ],
             [
                 'code' => "TC",
+                'native' => "Turks and Caicos Islands",
                 'country' => "Turks and Caicos Islands",
-                'native' => "Turks and Caicos Islands"
             ],
             [
                 'code' => "TD",
+                'native' => "Tchad",
                 'country' => "Chad",
-                'native' => "Tchad"
             ],
             [
                 'code' => "TF",
+                'native' => "Territoire des Terres australes et antarctiques fr",
                 'country' => "French Southern Territories",
-                'native' => "Territoire des Terres australes et antarctiques fr"
             ],
             [
                 'code' => "TG",
+                'native' => "Togo",
                 'country' => "Togo",
-                'native' => "Togo"
             ],
             [
                 'code' => "TH",
+                'native' => "ประเทศไทย",
                 'country' => "Thailand",
-                'native' => "ประเทศไทย"
             ],
             [
                 'code' => "TJ",
+                'native' => "Тоҷикистон",
                 'country' => "Tajikistan",
-                'native' => "Тоҷикистон"
             ],
             [
                 'code' => "TK",
+                'native' => "Tokelau",
                 'country' => "Tokelau",
-                'native' => "Tokelau"
             ],
             [
                 'code' => "TL",
+                'native' => "Timor-Leste",
                 'country' => "East Timor",
-                'native' => "Timor-Leste"
             ],
             [
                 'code' => "TM",
+                'native' => "Türkmenistan",
                 'country' => "Turkmenistan",
-                'native' => "Türkmenistan"
             ],
             [
                 'code' => "TN",
+                'native' => "تونس",
                 'country' => "Tunisia",
-                'native' => "تونس"
             ],
             [
                 'code' => "TO",
+                'native' => "Tonga",
                 'country' => "Tonga",
-                'native' => "Tonga"
             ],
             [
                 'code' => "TR",
+                'native' => "Türkiye",
                 'country' => "Turkey",
-                'native' => "Türkiye"
             ],
             [
                 'code' => "TT",
+                'native' => "Trinidad and Tobago",
                 'country' => "Trinidad and Tobago",
-                'native' => "Trinidad and Tobago"
             ],
             [
                 'code' => "TV",
+                'native' => "Tuvalu",
                 'country' => "Tuvalu",
-                'native' => "Tuvalu"
             ],
             [
                 'code' => "TW",
+                'native' => "臺灣",
                 'country' => "Taiwan",
-                'native' => "臺灣"
             ],
             [
                 'code' => "TZ",
+                'native' => "Tanzania",
                 'country' => "Tanzania",
-                'native' => "Tanzania"
             ],
             [
                 'code' => "UA",
+                'native' => "Україна",
                 'country' => "Ukraine",
-                'native' => "Україна"
             ],
             [
                 'code' => "UG",
+                'native' => "Uganda",
                 'country' => "Uganda",
-                'native' => "Uganda"
             ],
             [
                 'code' => "UM",
+                'native' => "United States Minor Outlying Islands",
                 'country' => "U.S. Minor Outlying Islands",
-                'native' => "United States Minor Outlying Islands"
             ],
             [
                 'code' => "US",
+                'native' => "United States",
                 'country' => "United States",
-                'native' => "United States"
             ],
             [
                 'code' => "UY",
+                'native' => "Uruguay",
                 'country' => "Uruguay",
-                'native' => "Uruguay"
             ],
             [
                 'code' => "UZ",
+                'native' => "O‘zbekiston",
                 'country' => "Uzbekistan",
-                'native' => "O‘zbekiston"
             ],
             [
                 'code' => "VA",
+                'native' => "Vaticano",
                 'country' => "Vatican City",
-                'native' => "Vaticano"
             ],
             [
                 'code' => "VC",
+                'native' => "Saint Vincent and the Grenadines",
                 'country' => "Saint Vincent and the Grenadines",
-                'native' => "Saint Vincent and the Grenadines"
             ],
             [
                 'code' => "VE",
+                'native' => "Venezuela",
                 'country' => "Venezuela",
-                'native' => "Venezuela"
             ],
             [
                 'code' => "VG",
+                'native' => "British Virgin Islands",
                 'country' => "British Virgin Islands",
-                'native' => "British Virgin Islands"
             ],
             [
                 'code' => "VI",
+                'native' => "United States Virgin Islands",
                 'country' => "U.S. Virgin Islands",
-                'native' => "United States Virgin Islands"
             ],
             [
                 'code' => "VN",
+                'native' => "Việt Nam",
                 'country' => "Vietnam",
-                'native' => "Việt Nam"
             ],
             [
                 'code' => "VU",
+                'native' => "Vanuatu",
                 'country' => "Vanuatu",
-                'native' => "Vanuatu"
             ],
             [
                 'code' => "WF",
+                'native' => "Wallis et Futuna",
                 'country' => "Wallis and Futuna",
-                'native' => "Wallis et Futuna"
             ],
             [
                 'code' => "WS",
+                'native' => "Samoa",
                 'country' => "Samoa",
-                'native' => "Samoa"
             ],
             [
                 'code' => "XK",
+                'native' => "Republika e Kosovës",
                 'country' => "Kosovo",
-                'native' => "Republika e Kosovës"
             ],
             [
                 'code' => "YE",
+                'native' => "اليَمَن",
                 'country' => "Yemen",
-                'native' => "اليَمَن"
             ],
             [
                 'code' => "YT",
+                'native' => "Mayotte",
                 'country' => "Mayotte",
-                'native' => "Mayotte"
             ],
             [
                 'code' => "ZA",
+                'native' => "South Africa",
                 'country' => "South Africa",
-                'native' => "South Africa"
             ],
             [
                 'code' => "ZM",
+                'native' => "Zambia",
                 'country' => "Zambia",
-                'native' => "Zambia"
             ],
             [
                 'code' => "ZW",
+                'native' => "Zimbabwe",
                 'country' => "Zimbabwe",
-                'native' => "Zimbabwe"
             ]
         ]);
     }

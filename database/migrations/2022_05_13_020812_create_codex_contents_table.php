@@ -19,8 +19,7 @@ return new class extends Migration
             $table->longText('text')->nullable(false);
             $table->text('thoughts')->nullable(true);
             $table->integer('chapters', false, true)->nullable(false);
-            $table->foreignId('codexes_id')->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('authors_id')->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('codex_authors')->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

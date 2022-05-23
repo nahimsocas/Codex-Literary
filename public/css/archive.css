@@ -108,42 +108,42 @@ body {
   margin-left: 1em;
 }
 
-#archive--db-chapters,
-#archive--db-drafts {
+#chapters,
+#drafts {
   position: relative;
   display: none;
 }
 
-#archive--db-chapters a,
-#archive--db-drafts a {
+#chapters a,
+#drafts a {
   text-decoration: none;
   color: #282828;
 }
 
-#archive--db-chapters {
+#chapters {
   z-index: 1;
 }
 
-#archive--db-drafts {
+#drafts {
   z-index: 2;
 }
 
-#archive--db-chapters:target {
+#chapters:target {
   display: block;
   z-index: 1;
 }
 
-#archive--db-chapters:target #archive--db-drafts {
+#chapters:target #drafts {
   display: none;
   z-index: 2;
 }
 
-#archive--db-drafts:target {
+#drafts:target {
   display: block;
   z-index: 1;
 }
 
-#archive--db-drafts:target #archive--db-chapters {
+#drafts:target #chapters {
   display: none;
   z-index: 2;
 }

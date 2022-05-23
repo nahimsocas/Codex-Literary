@@ -17,236 +17,236 @@ class GenreSeeder extends Seeder
     {
         DB::table('genres')->insert([
             [
-                'short_name' => "Combined Print and E-Book Fiction",
-                'genre' => "Combined Print & E-Book Fiction"
+                'genre' => "Combined Print and E-Book Fiction",
+                'list_name' => "Combined Print & E-Book Fiction"
             ],
             [
-                'short_name' => "Combined Print and E-Book Nonfiction",
-                'genre' => "Combined Print & E-Book Nonfiction"
+                'genre' => "Combined Print and E-Book Nonfiction",
+                'list_name' => "Combined Print & E-Book Nonfiction"
             ],
             [
-                'short_name' => "Hardcover Fiction",
-                'genre' => "Hardcover Fiction"
+                'genre' => "Hardcover Fiction",
+                'list_name' => "Hardcover Fiction"
             ],
             [
-                'short_name' => "Hardcover Nonfiction",
-                'genre' => "Hardcover Nonfiction"
+                'genre' => "Hardcover Nonfiction",
+                'list_name' => "Hardcover Nonfiction"
             ],
             [
-                'short_name' => "Trade Fiction Paperback",
-                'genre' => "Paperback Trade Fiction"
+                'genre' => "Trade Fiction Paperback",
+                'list_name' => "Paperback Trade Fiction"
             ],
             [
-                'short_name' => "Mass Market Paperback",
-                'genre' => "Paperback Mass-Market Fiction"
+                'genre' => "Mass Market Paperback",
+                'list_name' => "Paperback Mass-Market Fiction"
             ],
             [
-                'short_name' => "Paperback Nonfiction",
-                'genre' => "Paperback Nonfiction"
+                'genre' => "Paperback Nonfiction",
+                'list_name' => "Paperback Nonfiction"
             ],
             [
-                'short_name' => "E-Book Fiction",
-                'genre' => "E-Book Fiction"
+                'genre' => "E-Book Fiction",
+                'list_name' => "E-Book Fiction"
             ],
             [
-                'short_name' => "E-Book Nonfiction",
-                'genre' => "E-Book Nonfiction"
+                'genre' => "E-Book Nonfiction",
+                'list_name' => "E-Book Nonfiction"
             ],
             [
-                'short_name' => "Hardcover Advice",
-                'genre' => "Hardcover Advice & Misc."
+                'genre' => "Hardcover Advice",
+                'list_name' => "Hardcover Advice & Misc."
             ],
             [
-                'short_name' => "Paperback Advice",
-                'genre' => "Paperback Advice & Misc."
+                'genre' => "Paperback Advice",
+                'list_name' => "Paperback Advice & Misc."
             ],
             [
-                'short_name' => "Advice How-To and Miscellaneous",
-                'genre' => "Advice, How-To & Miscellaneous"
+                'genre' => "Advice How-To and Miscellaneous",
+                'list_name' => "Advice, How-To & Miscellaneous"
             ],
             [
-                'short_name' => "Hardcover Graphic Books",
-                'genre' => "Hardcover Graphic Books"
+                'genre' => "Hardcover Graphic Books",
+                'list_name' => "Hardcover Graphic Books"
             ],
             [
-                'short_name' => "Paperback Graphic Books",
-                'genre' => "Paperback Graphic Books"
+                'genre' => "Paperback Graphic Books",
+                'list_name' => "Paperback Graphic Books"
             ],
             [
-                'short_name' => "Manga",
-                'genre' => "Manga"
+                'genre' => "Manga",
+                'list_name' => "Manga"
             ],
             [
-                'short_name' => "Combined Print Fiction",
-                'genre' => "Combined Hardcover & Paperback Fiction"
+                'genre' => "Combined Print Fiction",
+                'list_name' => "Combined Hardcover & Paperback Fiction"
             ],
             [
-                'short_name' => "Combined Print Nonfiction",
-                'genre' => "Combined Hardcover & Paperback Nonfiction"
+                'genre' => "Combined Print Nonfiction",
+                'list_name' => "Combined Hardcover & Paperback Nonfiction"
             ],
             [
-                'short_name' => "Chapter Books",
-                'genre' => "Children’s Chapter Books"
+                'genre' => "Chapter Books",
+                'list_name' => "Children’s Chapter Books"
             ],
             [
-                'short_name' => "Childrens Middle Grade",
-                'genre' => "Children’s Middle Grade"
+                'genre' => "Childrens Middle Grade",
+                'list_name' => "Children’s Middle Grade"
             ],
             [
-                'short_name' => "Childrens Middle Grade E-Book",
-                'genre' => "Children’s Middle Grade E-Book"
+                'genre' => "Childrens Middle Grade E-Book",
+                'list_name' => "Children’s Middle Grade E-Book"
             ],
             [
-                'short_name' => "Childrens Middle Grade Hardcover",
-                'genre' => "Children’s Middle Grade Hardcover"
+                'genre' => "Childrens Middle Grade Hardcover",
+                'list_name' => "Children’s Middle Grade Hardcover"
             ],
             [
-                'short_name' => "Childrens Middle Grade Paperback",
-                'genre' => "Children’s Middle Grade Paperback"
+                'genre' => "Childrens Middle Grade Paperback",
+                'list_name' => "Children’s Middle Grade Paperback"
             ],
             [
-                'short_name' => "Paperback Books",
-                'genre' => "Children’s Paperback Books"
+                'genre' => "Paperback Books",
+                'list_name' => "Children’s Paperback Books"
             ],
             [
-                'short_name' => "Picture Books",
-                'genre' => "Children’s Picture Books"
+                'genre' => "Picture Books",
+                'list_name' => "Children’s Picture Books"
             ],
             [
-                'short_name' => "Series Books",
-                'genre' => "Children’s Series"
+                'genre' => "Series Books",
+                'list_name' => "Children’s Series"
             ],
             [
-                'short_name' => "Young Adult",
-                'genre' => "Young Adult"
+                'genre' => "Young Adult",
+                'list_name' => "Young Adult"
             ],
             [
-                'short_name' => "Young Adult E-Book",
-                'genre' => "Young Adult E-Book"
+                'genre' => "Young Adult E-Book",
+                'list_name' => "Young Adult E-Book"
             ],
             [
-                'short_name' => "Young Adult Hardcover",
-                'genre' => "Young Adult Hardcover"
+                'genre' => "Young Adult Hardcover",
+                'list_name' => "Young Adult Hardcover"
             ],
             [
-                'short_name' => "Young Adult Paperback",
-                'genre' => "Young Adult Paperback"
+                'genre' => "Young Adult Paperback",
+                'list_name' => "Young Adult Paperback"
             ],
             [
-                'short_name' => "Animals",
-                'genre' => "Animals"
+                'genre' => "Animals",
+                'list_name' => "Animals"
             ],
             [
-                'short_name' => "Audio Fiction",
-                'genre' => "Audio Fiction"
+                'genre' => "Audio Fiction",
+                'list_name' => "Audio Fiction"
             ],
             [
-                'short_name' => "Audio Nonfiction",
-                'genre' => "Audio Nonfiction"
+                'genre' => "Audio Nonfiction",
+                'list_name' => "Audio Nonfiction"
             ],
             [
-                'short_name' => "Business Books",
-                'genre' => "Business"
+                'genre' => "Business Books",
+                'list_name' => "Business"
             ],
             [
-                'short_name' => "Celebrities",
-                'genre' => "Celebrities"
+                'genre' => "Celebrities",
+                'list_name' => "Celebrities"
             ],
             [
-                'short_name' => "Crime and Punishment",
-                'genre' => "Crime and Punishment"
+                'genre' => "Crime and Punishment",
+                'list_name' => "Crime and Punishment"
             ],
             [
-                'short_name' => "Culture",
-                'genre' => "Culture"
+                'genre' => "Culture",
+                'list_name' => "Culture"
             ],
             [
-                'short_name' => "Education",
-                'genre' => "Education"
+                'genre' => "Education",
+                'list_name' => "Education"
             ],
             [
-                'short_name' => "Espionage",
-                'genre' => "Espionage"
+                'genre' => "Espionage",
+                'list_name' => "Espionage"
             ],
             [
-                'short_name' => "Expeditions Disasters and Adventures",
-                'genre' => "Expeditions"
+                'genre' => "Expeditions Disasters and Adventures",
+                'list_name' => "Expeditions"
             ],
             [
-                'short_name' => "Fashion Manners and Customs",
-                'genre' => "Fashion, Manners and Customs"
+                'genre' => "Fashion Manners and Customs",
+                'list_name' => "Fashion, Manners and Customs"
             ],
             [
-                'short_name' => "Food and Fitness",
-                'genre' => "Food and Diet"
+                'genre' => "Food and Fitness",
+                'list_name' => "Food and Diet"
             ],
             [
-                'short_name' => "Games and Activities",
-                'genre' => "Games and Activities"
+                'genre' => "Games and Activities",
+                'list_name' => "Games and Activities"
             ],
             [
-                'short_name' => "Graphic Books and Manga",
-                'genre' => "Graphic Books and Manga"
+                'genre' => "Graphic Books and Manga",
+                'list_name' => "Graphic Books and Manga"
             ],
             [
-                'short_name' => "Hardcover Business Books",
-                'genre' => "Hardcover Business Books"
+                'genre' => "Hardcover Business Books",
+                'list_name' => "Hardcover Business Books"
             ],
             [
-                'short_name' => "Health",
-                'genre' => "Health"
+                'genre' => "Health",
+                'list_name' => "Health"
             ],
             [
-                'short_name' => "Humor",
-                'genre' => "Humor"
+                'genre' => "Humor",
+                'list_name' => "Humor"
             ],
             [
-                'short_name' => "Indigenous Americans",
-                'genre' => "Indigenous Americans"
+                'genre' => "Indigenous Americans",
+                'list_name' => "Indigenous Americans"
             ],
             [
-                'short_name' => "Relationships",
-                'genre' => "Love and Relationships"
+                'genre' => "Relationships",
+                'list_name' => "Love and Relationships"
             ],
             [
-                'short_name' => "Mass Market",
-                'genre' => "Mass Market"
+                'genre' => "Mass Market",
+                'list_name' => "Mass Market"
             ],
             [
-                'short_name' => "Middle Grade Paperback",
-                'genre' => "Middle Grade Paperback"
+                'genre' => "Middle Grade Paperback",
+                'list_name' => "Middle Grade Paperback"
             ],
             [
-                'short_name' => "Paperback Business Books",
-                'genre' => "Paperback Business Books"
+                'genre' => "Paperback Business Books",
+                'list_name' => "Paperback Business Books"
             ],
             [
-                'short_name' => "Family",
-                'genre' => "Parenthood and Family"
+                'genre' => "Family",
+                'list_name' => "Parenthood and Family"
             ],
             [
-                'short_name' => "Hardcover Political Books",
-                'genre' => "Politics and American History"
+                'genre' => "Hardcover Political Books",
+                'list_name' => "Politics and American History"
             ],
             [
-                'short_name' => "Race and Civil Rights",
-                'genre' => "Race and Civil Rights"
+                'genre' => "Race and Civil Rights",
+                'list_name' => "Race and Civil Rights"
             ],
             [
-                'short_name' => "Religion Spirituality and Faith",
-                'genre' => "Religion, Spirituality and Faith"
+                'genre' => "Religion Spirituality and Faith",
+                'list_name' => "Religion, Spirituality and Faith"
             ],
             [
-                'short_name' => "Science",
-                'genre' => "Science"
+                'genre' => "Science",
+                'list_name' => "Science"
             ],
             [
-                'short_name' => "Sports",
-                'genre' => "Sports and Fitness"
+                'genre' => "Sports",
+                'list_name' => "Sports and Fitness"
             ],
             [
-                'short_name' => "Travel",
-                'genre' => "Travel"
+                'genre' => "Travel",
+                'list_name' => "Travel"
             ]
         ]);
     }

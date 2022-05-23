@@ -18,928 +18,928 @@ class LanguageSeeder extends Seeder
         DB::table('languages')->insert([
             [
                 'code' => "aa",
+                'native' => "Afar",
                 'language' => "Afar",
-                'native' => "Afar"
             ],
             [
                 'code' => "ab",
+                'native' => "Аҧсуа",
                 'language' => "Abkhazian",
-                'native' => "Аҧсуа"
             ],
             [
                 'code' => "af",
+                'native' => "Afrikaans",
                 'language' => "Afrikaans",
-                'native' => "Afrikaans"
             ],
             [
                 'code' => "ak",
+                'native' => "Akana",
                 'language' => "Akan",
-                'native' => "Akana"
             ],
             [
                 'code' => "am",
+                'native' => "አማርኛ",
                 'language' => "Amharic",
-                'native' => "አማርኛ"
             ],
             [
                 'code' => "an",
+                'native' => "Aragonés",
                 'language' => "Aragonese",
-                'native' => "Aragonés"
             ],
             [
                 'code' => "ar",
+                'native' => "العربية",
                 'language' => "Arabic",
-                'native' => "العربية"
             ],
             [
                 'code' => "as",
+                'native' => "অসমীয়া",
                 'language' => "Assamese",
-                'native' => "অসমীয়া"
             ],
             [
                 'code' => "av",
+                'native' => "Авар",
                 'language' => "Avar",
-                'native' => "Авар"
             ],
             [
                 'code' => "ay",
+                'native' => "Aymar",
                 'language' => "Aymara",
-                'native' => "Aymar"
             ],
             [
                 'code' => "az",
+                'native' => "Azərbaycanca / آذربايجان",
                 'language' => "Azerbaijani",
-                'native' => "Azərbaycanca / آذربايجان"
             ],
             [
                 'code' => "ba",
+                'native' => "Башҡорт",
                 'language' => "Bashkir",
-                'native' => "Башҡорт"
             ],
             [
                 'code' => "be",
+                'native' => "Беларуская",
                 'language' => "Belarusian",
-                'native' => "Беларуская"
             ],
             [
                 'code' => "bg",
+                'native' => "Български",
                 'language' => "Bulgarian",
-                'native' => "Български"
             ],
             [
                 'code' => "bh",
+                'native' => "भोजपुरी",
                 'language' => "Bihari",
-                'native' => "भोजपुरी"
             ],
             [
                 'code' => "bi",
+                'native' => "Bislama",
                 'language' => "Bislama",
-                'native' => "Bislama"
             ],
             [
                 'code' => "bm",
+                'native' => "Bamanankan",
                 'language' => "Bambara",
-                'native' => "Bamanankan"
             ],
             [
                 'code' => "bn",
+                'native' => "বাংলা",
                 'language' => "Bengali",
-                'native' => "বাংলা"
             ],
             [
                 'code' => "bo",
+                'native' => "བོད་ཡིག / Bod skad",
                 'language' => "Tibetan",
-                'native' => "བོད་ཡིག / Bod skad"
             ],
             [
                 'code' => "br",
+                'native' => "Brezhoneg",
                 'language' => "Breton",
-                'native' => "Brezhoneg"
             ],
             [
                 'code' => "bs",
+                'native' => "Bosanski",
                 'language' => "Bosnian",
-                'native' => "Bosanski"
             ],
             [
                 'code' => "ca",
+                'native' => "Català",
                 'language' => "Catalan",
-                'native' => "Català"
             ],
             [
                 'code' => "ce",
+                'native' => "Нохчийн",
                 'language' => "Chechen",
-                'native' => "Нохчийн"
             ],
             [
                 'code' => "ch",
+                'native' => "Chamoru",
                 'language' => "Chamorro",
-                'native' => "Chamoru"
             ],
             [
                 'code' => "co",
+                'native' => "Corsu",
                 'language' => "Corsican",
-                'native' => "Corsu"
             ],
             [
                 'code' => "cr",
+                'native' => "Nehiyaw",
                 'language' => "Cree",
-                'native' => "Nehiyaw"
             ],
             [
                 'code' => "cs",
+                'native' => "Čeština",
                 'language' => "Czech",
-                'native' => "Čeština"
             ],
             [
                 'code' => "cu",
+                'native' => "словѣньскъ / slověnĭskŭ",
                 'language' => "Old Church Slavonic / Old Bulgarian",
-                'native' => "словѣньскъ / slověnĭskŭ"
             ],
             [
                 'code' => "cv",
+                'native' => "Чăваш",
                 'language' => "Chuvash",
-                'native' => "Чăваш"
             ],
             [
                 'code' => "cy",
+                'native' => "Cymraeg",
                 'language' => "Welsh",
-                'native' => "Cymraeg"
             ],
             [
                 'code' => "da",
+                'native' => "Dansk",
                 'language' => "Danish",
-                'native' => "Dansk"
             ],
             [
                 'code' => "de",
+                'native' => "Deutsch",
                 'language' => "German",
-                'native' => "Deutsch"
             ],
             [
                 'code' => "dv",
+                'native' => "ދިވެހިބަސް",
                 'language' => "Divehi",
-                'native' => "ދިވެހިބަސް"
             ],
             [
                 'code' => "dz",
+                'native' => "ཇོང་ཁ",
                 'language' => "Dzongkha",
-                'native' => "ཇོང་ཁ"
             ],
             [
                 'code' => "ee",
+                'native' => "Ɛʋɛ",
                 'language' => "Ewe",
-                'native' => "Ɛʋɛ"
             ],
             [
                 'code' => "el",
+                'native' => "Ελληνικά",
                 'language' => "Greek",
-                'native' => "Ελληνικά"
             ],
             [
                 'code' => "en",
+                'native' => "English",
                 'language' => "English",
-                'native' => "English"
             ],
             [
                 'code' => "eo",
+                'native' => "Esperanto",
                 'language' => "Esperanto",
-                'native' => "Esperanto"
             ],
             [
                 'code' => "es",
+                'native' => "Español",
                 'language' => "Spanish",
-                'native' => "Español"
             ],
             [
                 'code' => "et",
+                'native' => "Eesti",
                 'language' => "Estonian",
-                'native' => "Eesti"
             ],
             [
                 'code' => "eu",
+                'native' => "Euskara",
                 'language' => "Basque",
-                'native' => "Euskara"
             ],
             [
                 'code' => "fa",
+                'native' => "فارسی",
                 'language' => "Persian",
-                'native' => "فارسی"
             ],
             [
                 'code' => "ff",
+                'native' => "Fulfulde",
                 'language' => "Peul",
-                'native' => "Fulfulde"
             ],
             [
                 'code' => "fi",
+                'native' => "Suomi",
                 'language' => "Finnish",
-                'native' => "Suomi"
             ],
             [
                 'code' => "fj",
+                'native' => "Na Vosa Vakaviti",
                 'language' => "Fijian",
-                'native' => "Na Vosa Vakaviti"
             ],
             [
                 'code' => "fo",
+                'native' => "Føroyskt",
                 'language' => "Faroese",
-                'native' => "Føroyskt"
             ],
             [
                 'code' => "fr",
+                'native' => "Français",
                 'language' => "French",
-                'native' => "Français"
             ],
             [
                 'code' => "fy",
+                'native' => "Frysk",
                 'language' => "West Frisian",
-                'native' => "Frysk"
             ],
             [
                 'code' => "ga",
+                'native' => "Gaeilge",
                 'language' => "Irish",
-                'native' => "Gaeilge"
             ],
             [
                 'code' => "gd",
+                'native' => "Gàidhlig",
                 'language' => "Scottish Gaelic",
-                'native' => "Gàidhlig"
             ],
             [
                 'code' => "gl",
+                'native' => "Galego",
                 'language' => "Galician",
-                'native' => "Galego"
             ],
             [
                 'code' => "gn",
+                'native' => "Avañe'ẽ",
                 'language' => "Guarani",
-                'native' => "Avañe'ẽ"
             ],
             [
                 'code' => "gu",
+                'native' => "ગુજરાતી",
                 'language' => "Gujarati",
-                'native' => "ગુજરાતી"
             ],
             [
                 'code' => "gv",
+                'native' => "Gaelg",
                 'language' => "Manx",
-                'native' => "Gaelg"
             ],
             [
                 'code' => "ha",
+                'native' => "هَوُسَ",
                 'language' => "Hausa",
-                'native' => "هَوُسَ"
             ],
             [
                 'code' => "he",
+                'native' => "עברית",
                 'language' => "Hebrew",
-                'native' => "עברית"
             ],
             [
                 'code' => "hi",
+                'native' => "हिन्दी",
                 'language' => "Hindi",
-                'native' => "हिन्दी"
             ],
             [
                 'code' => "ho",
+                'native' => "Hiri Motu",
                 'language' => "Hiri Motu",
-                'native' => "Hiri Motu"
             ],
             [
                 'code' => "hr",
+                'native' => "Hrvatski",
                 'language' => "Croatian",
-                'native' => "Hrvatski"
             ],
             [
                 'code' => "ht",
+                'native' => "Krèyol ayisyen",
                 'language' => "Haitian",
-                'native' => "Krèyol ayisyen"
             ],
             [
                 'code' => "hu",
+                'native' => "Magyar",
                 'language' => "Hungarian",
-                'native' => "Magyar"
             ],
             [
                 'code' => "hy",
+                'native' => "Հայերեն",
                 'language' => "Armenian",
-                'native' => "Հայերեն"
             ],
             [
                 'code' => "hz",
+                'native' => "Otsiherero",
                 'language' => "Herero",
-                'native' => "Otsiherero"
             ],
             [
                 'code' => "ia",
+                'native' => "Interlingua",
                 'language' => "Interlingua",
-                'native' => "Interlingua"
             ],
             [
                 'code' => "id",
+                'native' => "Bahasa Indonesia",
                 'language' => "Indonesian",
-                'native' => "Bahasa Indonesia"
             ],
             [
                 'code' => "ie",
+                'native' => "Interlingue",
                 'language' => "Interlingue",
-                'native' => "Interlingue"
             ],
             [
                 'code' => "ig",
+                'native' => "Igbo",
                 'language' => "Igbo",
-                'native' => "Igbo"
             ],
             [
                 'code' => "ii",
+                'native' => "ꆇꉙ / 四川彝语",
                 'language' => "Sichuan Yi",
-                'native' => "ꆇꉙ / 四川彝语"
             ],
             [
                 'code' => "ik",
+                'native' => "Iñupiak",
                 'language' => "Inupiak",
-                'native' => "Iñupiak"
             ],
             [
                 'code' => "io",
+                'native' => "Ido",
                 'language' => "Ido",
-                'native' => "Ido"
             ],
             [
                 'code' => "is",
+                'native' => "Íslenska",
                 'language' => "Icelandic",
-                'native' => "Íslenska"
             ],
             [
                 'code' => "it",
+                'native' => "Italiano",
                 'language' => "Italian",
-                'native' => "Italiano"
             ],
             [
                 'code' => "iu",
+                'native' => "ᐃᓄᒃᑎᑐᑦ",
                 'language' => "Inuktitut",
-                'native' => "ᐃᓄᒃᑎᑐᑦ"
             ],
             [
                 'code' => "ja",
+                'native' => "日本語",
                 'language' => "Japanese",
-                'native' => "日本語"
             ],
             [
                 'code' => "jv",
+                'native' => "Basa Jawa",
                 'language' => "Javanese",
-                'native' => "Basa Jawa"
             ],
             [
                 'code' => "ka",
+                'native' => "ქართული",
                 'language' => "Georgian",
-                'native' => "ქართული"
             ],
             [
                 'code' => "kg",
+                'native' => "KiKongo",
                 'language' => "Kongo",
-                'native' => "KiKongo"
             ],
             [
                 'code' => "ki",
+                'native' => "Gĩkũyũ",
                 'language' => "Kikuyu",
-                'native' => "Gĩkũyũ"
             ],
             [
                 'code' => "kj",
+                'native' => "Kuanyama",
                 'language' => "Kuanyama",
-                'native' => "Kuanyama"
             ],
             [
                 'code' => "kk",
+                'native' => "Қазақша",
                 'language' => "Kazakh",
-                'native' => "Қазақша"
             ],
             [
                 'code' => "kl",
+                'native' => "Kalaallisut",
                 'language' => "Greenlandic",
-                'native' => "Kalaallisut"
             ],
             [
                 'code' => "km",
+                'native' => "ភាសាខ្មែរ",
                 'language' => "Cambodian",
-                'native' => "ភាសាខ្មែរ"
             ],
             [
                 'code' => "kn",
+                'native' => "ಕನ್ನಡ",
                 'language' => "Kannada",
-                'native' => "ಕನ್ನಡ"
             ],
             [
                 'code' => "ko",
+                'native' => "한국어",
                 'language' => "Korean",
-                'native' => "한국어"
             ],
             [
                 'code' => "kr",
+                'native' => "Kanuri",
                 'language' => "Kanuri",
-                'native' => "Kanuri"
             ],
             [
                 'code' => "ks",
+                'native' => "कश्मीरी / كشميري",
                 'language' => "Kashmiri",
-                'native' => "कश्मीरी / كشميري"
             ],
             [
                 'code' => "ku",
+                'native' => "Kurdî / كوردی",
                 'language' => "Kurdish",
-                'native' => "Kurdî / كوردی"
             ],
             [
                 'code' => "kv",
+                'native' => "Коми",
                 'language' => "Komi",
-                'native' => "Коми"
             ],
             [
                 'code' => "kw",
+                'native' => "Kernewek",
                 'language' => "Cornish",
-                'native' => "Kernewek"
             ],
             [
                 'code' => "ky",
+                'native' => "Кыргызча",
                 'language' => "Kyrgyz",
-                'native' => "Кыргызча"
             ],
             [
                 'code' => "la",
+                'native' => "Latina",
                 'language' => "Latin",
-                'native' => "Latina"
             ],
             [
                 'code' => "lb",
+                'native' => "Lëtzebuergesch",
                 'language' => "Luxembourgish",
-                'native' => "Lëtzebuergesch"
             ],
             [
                 'code' => "lg",
+                'native' => "Luganda",
                 'language' => "Ganda",
-                'native' => "Luganda"
             ],
             [
                 'code' => "li",
+                'native' => "Limburgs",
                 'language' => "Limburgian",
-                'native' => "Limburgs"
             ],
             [
                 'code' => "ln",
+                'native' => "Lingála",
                 'language' => "Lingala",
-                'native' => "Lingála"
             ],
             [
                 'code' => "lo",
+                'native' => "ລາວ / Pha xa lao",
                 'language' => "Laotian",
-                'native' => "ລາວ / Pha xa lao"
             ],
             [
                 'code' => "lt",
+                'native' => "Lietuvių",
                 'language' => "Lithuanian",
-                'native' => "Lietuvių"
             ],
             [
                 'code' => "lu",
+                'native' => "Tshiluba",
                 'language' => "Luba-Katanga",
-                'native' => "Tshiluba"
             ],
             [
                 'code' => "lv",
+                'native' => "Latviešu",
                 'language' => "Latvian",
-                'native' => "Latviešu"
             ],
             [
                 'code' => "mg",
+                'native' => "Malagasy",
                 'language' => "Malagasy",
-                'native' => "Malagasy"
             ],
             [
                 'code' => "mh",
+                'native' => "Kajin Majel / Ebon",
                 'language' => "Marshallese",
-                'native' => "Kajin Majel / Ebon"
             ],
             [
                 'code' => "mi",
+                'native' => "Māori",
                 'language' => "Maori",
-                'native' => "Māori"
             ],
             [
                 'code' => "mk",
+                'native' => "Македонски",
                 'language' => "Macedonian",
-                'native' => "Македонски"
             ],
             [
                 'code' => "ml",
+                'native' => "മലയാളം",
                 'language' => "Malayalam",
-                'native' => "മലയാളം"
             ],
             [
                 'code' => "mn",
+                'native' => "Монгол",
                 'language' => "Mongolian",
-                'native' => "Монгол"
             ],
             [
                 'code' => "mo",
+                'native' => "Moldovenească",
                 'language' => "Moldovan",
-                'native' => "Moldovenească"
             ],
             [
                 'code' => "mr",
+                'native' => "मराठी",
                 'language' => "Marathi",
-                'native' => "मराठी"
             ],
             [
                 'code' => "ms",
+                'native' => "Bahasa Melayu",
                 'language' => "Malay",
-                'native' => "Bahasa Melayu"
             ],
             [
                 'code' => "mt",
+                'native' => "bil-Malti",
                 'language' => "Maltese",
-                'native' => "bil-Malti"
             ],
             [
                 'code' => "my",
+                'native' => "မြန်မာစာ",
                 'language' => "Burmese",
-                'native' => "မြန်မာစာ"
             ],
             [
                 'code' => "na",
+                'native' => "Dorerin Naoero",
                 'language' => "Nauruan",
-                'native' => "Dorerin Naoero"
             ],
             [
                 'code' => "nb",
+                'native' => "Norsk bokmål",
                 'language' => "Norwegian Bokmål",
-                'native' => "Norsk bokmål"
             ],
             [
                 'code' => "nd",
+                'native' => "Sindebele",
                 'language' => "North Ndebele",
-                'native' => "Sindebele"
             ],
             [
                 'code' => "ne",
+                'native' => "नेपाली",
                 'language' => "Nepali",
-                'native' => "नेपाली"
             ],
             [
                 'code' => "ng",
+                'native' => "Oshiwambo",
                 'language' => "Ndonga",
-                'native' => "Oshiwambo"
             ],
             [
                 'code' => "nl",
+                'native' => "Nederlands",
                 'language' => "Dutch",
-                'native' => "Nederlands"
             ],
             [
                 'code' => "nn",
+                'native' => "Norsk nynorsk",
                 'language' => "Norwegian Nynorsk",
-                'native' => "Norsk nynorsk"
             ],
             [
                 'code' => "no",
+                'native' => "Norsk",
                 'language' => "Norwegian",
-                'native' => "Norsk"
             ],
             [
                 'code' => "nr",
+                'native' => "isiNdebele",
                 'language' => "South Ndebele",
-                'native' => "isiNdebele"
             ],
             [
                 'code' => "nv",
+                'native' => "Diné bizaad",
                 'language' => "Navajo",
-                'native' => "Diné bizaad"
             ],
             [
                 'code' => "ny",
+                'native' => "Chi-Chewa",
                 'language' => "Chichewa",
-                'native' => "Chi-Chewa"
             ],
             [
                 'code' => "oc",
+                'native' => "Occitan",
                 'language' => "Occitan",
-                'native' => "Occitan"
             ],
             [
                 'code' => "oj",
+                'native' => "ᐊᓂᔑᓈᐯᒧᐎᓐ / Anishinaabemowin",
                 'language' => "Ojibwa",
-                'native' => "ᐊᓂᔑᓈᐯᒧᐎᓐ / Anishinaabemowin"
             ],
             [
                 'code' => "om",
+                'native' => "Oromoo",
                 'language' => "Oromo",
-                'native' => "Oromoo"
             ],
             [
                 'code' => "or",
+                'native' => "ଓଡ଼ିଆ",
                 'language' => "Oriya",
-                'native' => "ଓଡ଼ିଆ"
             ],
             [
                 'code' => "os",
+                'native' => "Иронау",
                 'language' => "Ossetian / Ossetic",
-                'native' => "Иронау"
             ],
             [
                 'code' => "pa",
+                'native' => "ਪੰਜਾਬੀ / पंजाबी / پنجابي",
                 'language' => "Panjabi / Punjabi",
-                'native' => "ਪੰਜਾਬੀ / पंजाबी / پنجابي"
             ],
             [
                 'code' => "pi",
+                'native' => "Pāli / पाऴि",
                 'language' => "Pali",
-                'native' => "Pāli / पाऴि"
             ],
             [
                 'code' => "pl",
+                'native' => "Polski",
                 'language' => "Polish",
-                'native' => "Polski"
             ],
             [
                 'code' => "ps",
+                'native' => "پښتو",
                 'language' => "Pashto",
-                'native' => "پښتو"
             ],
             [
                 'code' => "pt",
+                'native' => "Português",
                 'language' => "Portuguese",
-                'native' => "Português"
             ],
             [
                 'code' => "qu",
+                'native' => "Runa Simi",
                 'language' => "Quechua",
-                'native' => "Runa Simi"
             ],
             [
                 'code' => "rm",
+                'native' => "Rumantsch",
                 'language' => "Raeto Romance",
-                'native' => "Rumantsch"
             ],
             [
                 'code' => "rn",
+                'native' => "Kirundi",
                 'language' => "Kirundi",
-                'native' => "Kirundi"
             ],
             [
                 'code' => "ro",
+                'native' => "Română",
                 'language' => "Romanian",
-                'native' => "Română"
             ],
             [
                 'code' => "ru",
+                'native' => "Русский",
                 'language' => "Russian",
-                'native' => "Русский"
             ],
             [
                 'code' => "rw",
+                'native' => "Kinyarwandi",
                 'language' => "Rwandi",
-                'native' => "Kinyarwandi"
             ],
             [
                 'code' => "sa",
+                'native' => "संस्कृतम्",
                 'language' => "Sanskrit",
-                'native' => "संस्कृतम्"
             ],
             [
                 'code' => "sc",
+                'native' => "Sardu",
                 'language' => "Sardinian",
-                'native' => "Sardu"
             ],
             [
                 'code' => "sd",
+                'native' => "सिनधि",
                 'language' => "Sindhi",
-                'native' => "सिनधि"
             ],
             [
                 'code' => "se",
+                'native' => "Sámegiella",
                 'language' => "Northern Sami",
-                'native' => "Sámegiella"
             ],
             [
                 'code' => "sg",
+                'native' => "Sängö",
                 'language' => "Sango",
-                'native' => "Sängö"
             ],
             [
                 'code' => "sh",
+                'native' => "Srpskohrvatski / Српскохрватски",
                 'language' => "Serbo-Croatian",
-                'native' => "Srpskohrvatski / Српскохрватски"
             ],
             [
                 'code' => "si",
+                'native' => "සිංහල",
                 'language' => "Sinhalese",
-                'native' => "සිංහල"
             ],
             [
                 'code' => "sk",
+                'native' => "Slovenčina",
                 'language' => "Slovak",
-                'native' => "Slovenčina"
             ],
             [
                 'code' => "sl",
+                'native' => "Slovenščina",
                 'language' => "Slovenian",
-                'native' => "Slovenščina"
             ],
             [
                 'code' => "sm",
+                'native' => "Gagana Samoa",
                 'language' => "Samoan",
-                'native' => "Gagana Samoa"
             ],
             [
                 'code' => "sn",
+                'native' => "chiShona",
                 'language' => "Shona",
-                'native' => "chiShona"
             ],
             [
                 'code' => "so",
+                'native' => "Soomaaliga",
                 'language' => "Somalia",
-                'native' => "Soomaaliga"
             ],
             [
                 'code' => "sq",
+                'native' => "Shqip",
                 'language' => "Albanian",
-                'native' => "Shqip"
             ],
             [
                 'code' => "sr",
+                'native' => "Српски",
                 'language' => "Serbian",
-                'native' => "Српски"
             ],
             [
                 'code' => "ss",
+                'native' => "SiSwati",
                 'language' => "Swati",
-                'native' => "SiSwati"
             ],
             [
                 'code' => "st",
+                'native' => "Sesotho",
                 'language' => "Southern Sotho",
-                'native' => "Sesotho"
             ],
             [
                 'code' => "su",
+                'native' => "Basa Sunda",
                 'language' => "Sundanese",
-                'native' => "Basa Sunda"
             ],
             [
                 'code' => "sv",
+                'native' => "Svenska",
                 'language' => "Swedish",
-                'native' => "Svenska"
             ],
             [
                 'code' => "sw",
+                'native' => "Kiswahili",
                 'language' => "Swahili",
-                'native' => "Kiswahili"
             ],
             [
                 'code' => "ta",
+                'native' => "தமிழ்",
                 'language' => "Tamil",
-                'native' => "தமிழ்"
             ],
             [
                 'code' => "te",
+                'native' => "తెలుగు",
                 'language' => "Telugu",
-                'native' => "తెలుగు"
             ],
             [
                 'code' => "tg",
+                'native' => "Тоҷикӣ",
                 'language' => "Tajik",
-                'native' => "Тоҷикӣ"
             ],
             [
                 'code' => "th",
+                'native' => "ไทย / Phasa Thai",
                 'language' => "Thai",
-                'native' => "ไทย / Phasa Thai"
             ],
             [
                 'code' => "ti",
+                'native' => "ትግርኛ",
                 'language' => "Tigrinya",
-                'native' => "ትግርኛ"
             ],
             [
                 'code' => "tk",
+                'native' => "Туркмен / تركمن",
                 'language' => "Turkmen",
-                'native' => "Туркмен / تركمن"
             ],
             [
                 'code' => "tl",
+                'native' => "Tagalog",
                 'language' => "Tagalog / Filipino",
-                'native' => "Tagalog"
             ],
             [
                 'code' => "tn",
+                'native' => "Setswana",
                 'language' => "Tswana",
-                'native' => "Setswana"
             ],
             [
                 'code' => "to",
+                'native' => "Lea Faka-Tonga",
                 'language' => "Tonga",
-                'native' => "Lea Faka-Tonga"
             ],
             [
                 'code' => "tr",
+                'native' => "Türkçe",
                 'language' => "Turkish",
-                'native' => "Türkçe"
             ],
             [
                 'code' => "ts",
+                'native' => "Xitsonga",
                 'language' => "Tsonga",
-                'native' => "Xitsonga"
             ],
             [
                 'code' => "tt",
+                'native' => "Tatarça",
                 'language' => "Tatar",
-                'native' => "Tatarça"
             ],
             [
                 'code' => "tw",
+                'native' => "Twi",
                 'language' => "Twi",
-                'native' => "Twi"
             ],
             [
                 'code' => "ty",
+                'native' => "Reo Mā`ohi",
                 'language' => "Tahitian",
-                'native' => "Reo Mā`ohi"
             ],
             [
                 'code' => "ug",
+                'native' => "Uyƣurqə / ئۇيغۇرچە",
                 'language' => "Uyghur",
-                'native' => "Uyƣurqə / ئۇيغۇرچە"
             ],
             [
                 'code' => "uk",
+                'native' => "Українська",
                 'language' => "Ukrainian",
-                'native' => "Українська"
             ],
             [
                 'code' => "ur",
+                'native' => "اردو",
                 'language' => "Urdu",
-                'native' => "اردو"
             ],
             [
                 'code' => "uz",
+                'native' => "Ўзбек",
                 'language' => "Uzbek",
-                'native' => "Ўзбек"
             ],
             [
                 'code' => "ve",
+                'native' => "Tshivenḓa",
                 'language' => "Venda",
-                'native' => "Tshivenḓa"
             ],
             [
                 'code' => "vi",
+                'native' => "Tiếng Việt",
                 'language' => "Vietnamese",
-                'native' => "Tiếng Việt"
             ],
             [
                 'code' => "vo",
+                'native' => "Volapük",
                 'language' => "Volapük",
-                'native' => "Volapük"
             ],
             [
                 'code' => "wa",
+                'native' => "Walon",
                 'language' => "Walloon",
-                'native' => "Walon"
             ],
             [
                 'code' => "wo",
+                'native' => "Wollof",
                 'language' => "Wolof",
-                'native' => "Wollof"
             ],
             [
                 'code' => "xh",
+                'native' => "isiXhosa",
                 'language' => "Xhosa",
-                'native' => "isiXhosa"
             ],
             [
                 'code' => "yi",
+                'native' => "ייִדיש",
                 'language' => "Yiddish",
-                'native' => "ייִדיש"
             ],
             [
                 'code' => "yo",
+                'native' => "Yorùbá",
                 'language' => "Yoruba",
-                'native' => "Yorùbá"
             ],
             [
                 'code' => "za",
+                'native' => "Cuengh / Tôô / 壮语",
                 'language' => "Zhuang",
-                'native' => "Cuengh / Tôô / 壮语"
             ],
             [
                 'code' => "zh",
+                'native' => "中文",
                 'language' => "Chinese",
-                'native' => "中文"
             ],
             [
                 'code' => "zu",
+                'native' => "isiZulu",
                 'language' => "Zulu",
-                'native' => "isiZulu"
             ]
         ]);
     }

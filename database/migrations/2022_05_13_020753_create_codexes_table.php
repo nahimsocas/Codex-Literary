@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('cover')->nullable(true);
             $table->string('title')->nullable(false);
             $table->text('description')->nullable(false);
+            $table->string('CLnumber')->unique()->nullable(false);
             $table->foreignId('languages_id')->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

@@ -63,7 +63,7 @@ body {
 
 .cart--miniview {
 	position: relative;
-	height: 120px;
+	height: 140px;
 	margin: 0 1.8em;
 	padding: 1.2em;
 	margin-bottom: 1.4em;
@@ -80,7 +80,7 @@ body {
 	position: relative;
 	vertical-align: top;
 	width: 10%;
-	height: 120px;
+	height: 140px;
 }
 
 .cart--img img {
@@ -116,6 +116,7 @@ body {
 }
 
 .cart--information p {
+	font-size: .88em;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;

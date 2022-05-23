@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('libraries', function (Blueprint $table) {
             $table->id();
             $table->string('url')->nullable(false);
-            $table->foreignId('codexes_id')->unique()->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('codex_authors')->unique()->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

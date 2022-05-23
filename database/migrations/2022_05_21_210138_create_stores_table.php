@@ -15,10 +15,12 @@ return new class extends Migration
     {
         Schema::create('stores', function (Blueprint $table) {
             $table->id();
-            $table->string('cover')->nullable(false)->default('../imgs/Cover.png');
+            $table->integer('product_id')->nullable(false);
+            $table->string('cover')->nullable(false);
             $table->string('title')->nullable(false);
             $table->string('author')->nullable(false);
             $table->string('category')->nullable(false);
+            $table->integer('quantity')->nullable(false);
             $table->foreignId('users_id')->nullable(false)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

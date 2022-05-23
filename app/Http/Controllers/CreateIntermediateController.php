@@ -2,160 +2,156 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Author;
 use App\Models\CodexAuthor;
 use App\Models\CodexContent;
 use App\Models\CodexDraft;
-use Illuminate\Support\Facades\DB;
+use App\Models\Library;
 
 class CreateIntermediateController extends Controller
 {
-    public function index($url)
+    public function index($url, $CLnumber)
     {
-        $original = DB::select("SELECT * FROM libraries WHERE (`url` = \"$url\")");
-        $codexID = $original[0]->codexes_id;
+        $clSerial = $this->detectCodex($url, $CLnumber);
 
         $archive = CodexAuthor::join('codexes', 'codex_authors.codexes_id', '=', 'codexes.id')
-            ->where('codexes.id', '=', $codexID)
-            ->join('authors', 'authors.id', '=', 'codex_authors.authors_id')
-            ->join('languages', 'languages.id', '=', 'codexes.languages_id')
-            ->join('codex_genres', 'codex_genres.codexes_id', '=', 'codexes.id')
-            ->join('genres', 'genres.id', '=', 'codex_genres.genres_id')
-            ->select('codex_authors.*', 'codexes.*', 'authors.author', 'languages.language', 'codex_genres.*', 'genres.genre')
+            ->join('authors', 'codex_authors.authors_id', '=', 'authors.id')
+            ->join('codex_genres', 'codex_genres.genres_id', '=', 'codex_genres.codexes_id')
+            ->join('genres', 'codex_genres.codexes_id', '=', 'genres.id')
+            ->join('languages', 'codexes.languages_id', '=', 'languages.id')
+            ->where('codexes.CLnumber', '=', $clSerial)
+            ->select('codex_authors.id', 'codexes.cover', 'codexes.title', 'codexes.description', 'codexes.CLnumber', 'authors.author', 'genres.genre', 'languages.language')
             ->get();
 
-        $authorID = $archive[0]->authors_id;
-        $numberChapters = DB::select("SELECT COUNT(*) AS ROWNUMBERS FROM codex_contents");
-        $numberDrafts = DB::select("SELECT COUNT(*) AS ROWNUMBERS FROM codex_drafts");
+        $chapters = CodexAuthor::join('codex_contents', 'codex_authors.id', '=', 'codex_contents.codex_authors')
+            ->where('codex_authors.id', '=', $archive[0]->id)
+            ->select('codex_contents.id', 'codex_contents.title', 'codex_contents.chapters')
+            ->get();
 
-        if ($numberChapters[0]->ROWNUMBERS) {
-            $chapters = CodexContent::select('*')->where('codexes_id', '=', $codexID)->where('authors_id', '=', $authorID)->get();
-        }
-        if ($numberDrafts[0]->ROWNUMBERS) {
-            $drafts = CodexDraft::select('*')->where('codexes_id', '=', $codexID)->where('authors_id', '=', $authorID)->get();
-        }
+        $drafts = CodexAuthor::join('codex_drafts', 'codex_authors.id', '=', 'codex_drafts.codex_authors')
+            ->where('codex_authors.id', '=', $archive[0]->id)
+            ->select('codex_drafts.id', 'codex_drafts.title')
+            ->get();
 
         return view('create.archive', [
             'archive' => $archive,
-            'chapters' => $chapters ?? 0,
-            'drafts' => $drafts ?? 0,
-            'url' => $url
+            'chapters' => count($chapters) ? $chapters : 0,
+            'drafts' => count($drafts) ? $drafts : 0,
+            'url' => $url,
+            'CLnumber' => $clSerial
         ]);
     }
 
-    public function edit($url, $id, $type)
+    public function edit($url, $CLnumber, $id, $type)
     {
-        $original = DB::select("SELECT * FROM libraries WHERE (`url` = \"$url\")");
-        $codexID = $original[0]->codexes_id;
-        $theAuthor = Author::where('author', '=', auth()->user()->username)->select('*')->get();
-        $authorID = $theAuthor[0]->id;
+        $clSerial = $this->detectCodex($url, $CLnumber);
+        
+        $codexAuthor = CodexAuthor::join('codexes', 'codex_authors.codexes_id', '=', 'codexes.id')
+        ->where('codexes.CLnumber', '=', $clSerial)
+        ->select('codex_authors.id')->get();
 
         if ( $type == 'chapter' ) {
-            $theEdit = CodexContent::where('id', '=', $id)->where('authors_id', '=', $authorID)->where('codexes_id', '=', $codexID)->get();
+            $edit = CodexContent::where('codex_authors', '=', $codexAuthor[0]->id)->where('id', '=', $id)->get();
         } else if ( $type == 'draft' ) {
-            $theEdit = CodexDraft::where('id', '=', $id)->where('authors_id', '=', $authorID)->where('codexes_id', '=', $codexID)->get();
+            $edit = CodexDraft::where('codex_authors', '=', $codexAuthor[0]->id)->where('id', '=', $id)->get();
         }
-        $inText = strip_tags($theEdit[0]->text);
 
         return view('create.edit-chapter', [
-            'edit' => $theEdit,
-            'text' => $inText,
-            'url' => $url
+            'edit' => $edit,
+            'url' => $url,
+            'CLnumber' => $clSerial
         ]);
     }
 
-    public function store($url)
+    public function store($url, $CLnumber)
     {
         request()->validate([
             'title' => 'required|min:3|max:100',
             'text' => 'required|min:100',
         ]);
+        
+        $clSerial = $this->detectCodex($url, $CLnumber);
 
-        $original = DB::select("SELECT * FROM libraries WHERE (`url` = \"$url\")");
-        $codexID = $original[0]->codexes_id;
-        $user = auth()->user()->username;
-        $theAuthor = DB::select("SELECT id FROM authors WHERE (`author` = \"$user\")");
-        $authorID = $theAuthor[0]->id;
+        $codexAuthor = CodexAuthor::join('codexes', 'codex_authors.codexes_id', '=', 'codexes.id')
+        ->where('codexes.CLnumber', '=', $clSerial)
+        ->select('codex_authors.id')->get();
 
-        $title = request('title');
-        $convertedText = trim(request('converted-text'));
-        $thoughts = " ";
-        if (request('thoughts')) {
-            $thoughts = request('thoughts');
-        }
+        $chapters = CodexContent::where('codex_authors', '=', $codexAuthor[0]->id)->count();
 
-        $chapters = DB::select("SELECT COUNT(`chapters`) AS CHAPTERS FROM codex_contents WHERE (`codexes_id` = $codexID)");
-        $chapterNumber = $chapters[0]->CHAPTERS + 1;
-
-        if (request('finish') == 'draft') {
-            DB::insert("INSERT INTO codex_drafts (`title`, `text`, `thoughts`, `codexes_id`, `authors_id`) VALUES (\"$title\", \"$convertedText\", \"$thoughts\", $codexID, $authorID)");
-        } else if (request('finish') == 'publish') {
-            DB::insert("INSERT INTO codex_contents (`title`, `text`, `thoughts`, `chapters`, `codexes_id`, `authors_id`) VALUES (\"$title\", \"$convertedText\", \"$thoughts\", $chapterNumber, $codexID, $authorID)");
+        if ( request('finish') == 'draft' ) {
+            CodexDraft::insert([
+                'title' => request('title'),
+                'text' => trim(request('converted-text')),
+                'thoughts' => (empty(request('thoughts'))) ? ' ' : request('thoughts'),
+                'codex_authors' => $codexAuthor[0]->id
+            ]);
+        } else if ( request('finish') == 'publish' ) {
+            CodexContent::insert([
+                'title' => request('title'),
+                'text' => trim(request('converted-text')),
+                'thoughts' => (empty(request('thoughts'))) ? ' ' : request('thoughts'),
+                'chapters' => ($chapters + 1),
+                'codex_authors' => $codexAuthor[0]->id
+            ]);
         }
 
         return redirect()->route('create.archive', [
-            'url' => $url
+            'url' => $url,
+            'CLnumber' => $CLnumber
         ]);
     }
 
-    public function create($url)
+    public function create($url, $CLnumber)
     {
+        $clSerial = $this->detectCodex($url, $CLnumber);
         return view('create.chapter', [
-            'url' => $url
+            'url' => $url,
+            'CLnumber' => $clSerial
         ]);
     }
 
-    public function update($url)
+    public function update($url, $CLnumber)
     {
-        $data = request()->post();
-        $title = $data['title'];
-        $thoughts = $data['thoughts'];
-        $chpDrfID = $data['chp-drf'];
-        
-        if ( $data['qwhs'] ) {
-            if ( $data['converted-text'] ) {
-                DB::update("UPDATE codex_contents SET `title` = \"$title\", `thoughts` = \"$thoughts\" WHERE `id` = $chpDrfID");
+        $clSerial = $this->detectCodex($url, $CLnumber);
+
+        if ( request()->post()['qwhs'] ) {
+            if ( request()->post()['converted-text'] ) {
+                CodexContent::where('id', '=', request()->post()['chp-drf'])
+                ->update(['title' => request()->post()['title'], 'text' => request()->post()['converted-text'], 'thoughts' => request()->post()['thoughts']]);
             } else {
-                $text = $data['converted-text'];
-                DB::update("UPDATE codex_contents SET `title` = \"$title\", `text` = \"$text\", `thoughts` = \"$thoughts\" WHERE `id` = $chpDrfID");
+                CodexContent::where('id', '=', request()->post()['chp-drf'])
+                ->update(['title' => request()->post()['title'], 'thoughts' => request()->post()['thoughts']]);
             }
         } else {
-            if ( $data['converted-text'] ) {
-                DB::update("UPDATE codex_drafts SET `title` = \"$title\", `thoughts` = \"$thoughts\" WHERE `id` = $chpDrfID");
+            if ( request()->post()['converted-text'] ) {
+                CodexDraft::where('id', '=', request()->post()['chp-drf'])
+                ->update(['title' => request()->post()['title'], 'text' => request()->post()['converted-text'], 'thoughts' => request()->post()['thoughts']]);
             } else {
-                $text = $data['converted-text'];
-                DB::update("UPDATE codex_drafts SET `title` = \"$title\", `text` = \"$text\", `thoughts` = \"$thoughts\" WHERE `id` = $chpDrfID");
+                CodexDraft::where('id', '=', request()->post()['chp-drf'])
+                ->update(['title' => request()->post()['title'], 'thoughts' => request()->post()['thoughts']]);
             }
         }
 
-        $original = DB::select("SELECT * FROM libraries WHERE (`url` = \"$url\")");
-        $codexID = $original[0]->codexes_id;
-
-        $archive = CodexAuthor::join('codexes', 'codex_authors.codexes_id', '=', 'codexes.id')
-            ->where('codexes.id', '=', $codexID)
-            ->join('authors', 'authors.id', '=', 'codex_authors.authors_id')
-            ->join('languages', 'languages.id', '=', 'codexes.languages_id')
-            ->join('codex_genres', 'codex_genres.codexes_id', '=', 'codexes.id')
-            ->join('genres', 'genres.id', '=', 'codex_genres.genres_id')
-            ->select('codex_authors.*', 'codexes.*', 'authors.author', 'languages.language', 'codex_genres.*', 'genres.genre')
-            ->get();
-
-        $authorID = $archive[0]->authors_id;
-        $numberChapters = DB::select("SELECT COUNT(*) AS ROWNUMBERS FROM codex_contents");
-        $numberDrafts = DB::select("SELECT COUNT(*) AS ROWNUMBERS FROM codex_drafts");
-
-        if ($numberChapters[0]->ROWNUMBERS) {
-            $chapters = CodexContent::select('*')->where('codexes_id', '=', $codexID)->where('authors_id', '=', $authorID)->get();
-        }
-        if ($numberDrafts[0]->ROWNUMBERS) {
-            $drafts = CodexDraft::select('*')->where('codexes_id', '=', $codexID)->where('authors_id', '=', $authorID)->get();
-        }
-
-        return view('create.archive', [
-            'archive' => $archive,
-            'chapters' => $chapters ?? 0,
-            'drafts' => $drafts ?? 0,
-            'url' => $url
+        return redirect()->route('create.archive', [
+            'url' => $url,
+            'CLnumber' => $CLnumber
         ]);
+    }
+
+    public function detectCodex($url, $CLnumber)
+    {
+        $library = Library::join('codex_authors', 'libraries.codex_authors', '=', 'codex_authors.id')
+            ->join('codexes', 'codex_authors.codexes_id', '=', 'codexes.id')
+            ->where('libraries.url', '=', $url)
+            ->select('codexes.id', 'codexes.CLnumber')
+            ->get();
+        $clSerial = '';
+
+        foreach ($library as $value) {
+            if (hash('crc32', $value['CLnumber'], false) == $CLnumber) {
+                $clSerial = $value['CLnumber'];
+                break;
+            }
+        }
+        return $clSerial;
     }
 }

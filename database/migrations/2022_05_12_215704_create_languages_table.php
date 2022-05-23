@@ -16,9 +16,8 @@ return new class extends Migration
         Schema::create('languages', function (Blueprint $table) {
             $table->id();
             $table->string('code')->unique()->nullable(false);
-            $table->string('language')->nullable(false);
             $table->string('native')->nullable(false);
-            $table->timestamps();
+            $table->string('language')->nullable(false);
         });
     }
 

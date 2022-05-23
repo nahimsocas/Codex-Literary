@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -18,259 +17,259 @@ class LibrarySeeder extends Seeder
         DB::table('libraries')->insert([
             [
                 'url' => "shadow-of-night",
-                'codexes_id' => 1
+                'codex_authors' => 1
             ],
             [
                 'url' => "gone-girl",
-                'codexes_id' => 2
+                'codex_authors' => 2
             ],
             [
                 'url' => "backfire",
-                'codexes_id' => 3
+                'codex_authors' => 3
             ],
             [
                 'url' => "the-next-best-thing",
-                'codexes_id' => 4
+                'codex_authors' => 4
             ],
             [
                 'url' => "wicked-business",
-                'codexes_id' => 5
+                'codex_authors' => 5
             ],
             [
                 'url' => "the-great-escape",
-                'codexes_id' => 6
+                'codex_authors' => 6
             ],
             [
                 'url' => "a-dance-with-dragons",
-                'codexes_id' => 7
+                'codex_authors' => 7
             ],
             [
                 'url' => "the-prisoner-of-heaven",
-                'codexes_id' => 8
+                'codex_authors' => 8
             ],
             [
                 'url' => "night-watch",
-                'codexes_id' => 9
+                'codex_authors' => 9
             ],
             [
                 'url' => "criminal",
-                'codexes_id' => 10
+                'codex_authors' => 10
             ],
             [
                 'url' => "mission-to-paris",
-                'codexes_id' => 11
+                'codex_authors' => 11
             ],
             [
                 'url' => "calico-joe",
-                'codexes_id' => 12
+                'codex_authors' => 12
             ],
             [
                 'url' => "bloodline",
-                'codexes_id' => 13
+                'codex_authors' => 13
             ],
             [
                 'url' => "beautiful-ruins",
-                'codexes_id' => 14
+                'codex_authors' => 14
             ],
             [
                 'url' => "the-age-of-miracles",
-                'codexes_id' => 15
+                'codex_authors' => 15
             ],
             [
                 'url' => "15-seconds",
-                'codexes_id' => 16
+                'codex_authors' => 16
             ],
             [
                 'url' => "porch-lights",
-                'codexes_id' => 17
+                'codex_authors' => 17
             ],
             [
                 'url' => "inferno",
-                'codexes_id' => 18
+                'codex_authors' => 18
             ],
             [
                 'url' => "hidden-order",
-                'codexes_id' => 19
+                'codex_authors' => 19
             ],
             [
                 'url' => "and-the-mountains-echoed",
-                'codexes_id' => 20
+                'codex_authors' => 20
             ],
             [
                 'url' => "the-ocean-at-the-end-of-the-lane",
-                'codexes_id' => 21
+                'codex_authors' => 21
             ],
             [
                 'url' => "bombshell",
-                'codexes_id' => 22
+                'codex_authors' => 22
             ],
             [
                 'url' => "bad-monkey",
-                'codexes_id' => 23
+                'codex_authors' => 23
             ],
             [
                 'url' => "william-shakespeare's-star-wars",
-                'codexes_id' => 24
+                'codex_authors' => 24
             ],
             [
                 'url' => "the-light-in-the-ruins",
-                'codexes_id' => 25
+                'codex_authors' => 25
             ],
             [
                 'url' => "the-silver-star",
-                'codexes_id' => 26
+                'codex_authors' => 26
             ],
             [
                 'url' => "the-eye-of-god",
-                'codexes_id' => 27
+                'codex_authors' => 27
             ],
             [
                 'url' => "affliction",
-                'codexes_id' => 28
+                'codex_authors' => 28
             ],
             [
                 'url' => "crucible",
-                'codexes_id' => 29
+                'codex_authors' => 29
             ],
             [
                 'url' => "sisterland",
-                'codexes_id' => 30
+                'codex_authors' => 30
             ],
             [
                 'url' => "the-last-original-wife",
-                'codexes_id' => 31
+                'codex_authors' => 31
             ],
             [
                 'url' => "the-son",
-                'codexes_id' => 32
+                'codex_authors' => 32
             ],
             [
                 'url' => "america",
-                'codexes_id' => 33
+                'codex_authors' => 33
             ],
             [
                 'url' => "blood-feud",
-                'codexes_id' => 34
+                'codex_authors' => 34
             ],
             [
                 'url' => "hard-choices",
-                'codexes_id' => 35
+                'codex_authors' => 35
             ],
             [
                 'url' => "capital-in-the-twenty-first-century",
-                'codexes_id' => 36
+                'codex_authors' => 36
             ],
             [
                 'url' => "david-and-goliath",
-                'codexes_id' => 37
+                'codex_authors' => 37
             ],
             [
                 'url' => "diary-of-a-mad-diva",
-                'codexes_id' => 38
+                'codex_authors' => 38
             ],
             [
                 'url' => "flash-boys",
-                'codexes_id' => 39
+                'codex_authors' => 39
             ],
             [
                 'url' => "thrive",
-                'codexes_id' => 40
+                'codex_authors' => 40
             ],
             [
                 'url' => "the-opposite-of-loneliness",
-                'codexes_id' => 41
+                'codex_authors' => 41
             ],
             [
                 'url' => "how-not-to-be-wrong",
-                'codexes_id' => 42
+                'codex_authors' => 42
             ],
             [
                 'url' => "things-that-matter",
-                'codexes_id' => 43
+                'codex_authors' => 43
             ],
             [
                 'url' => "the-romanov-sisters",
-                'codexes_id' => 44
+                'codex_authors' => 44
             ],
             [
                 'url' => "primates-of-park-avenue",
-                'codexes_id' => 45
+                'codex_authors' => 45
             ],
             [
                 'url' => "the-five-love-languages",
-                'codexes_id' => 46
+                'codex_authors' => 46
             ],
             [
                 'url' => "missoula",
-                'codexes_id' => 47
+                'codex_authors' => 47
             ],
             [
                 'url' => "daring-greatly",
-                'codexes_id' => 48
+                'codex_authors' => 48
             ],
             [
                 'url' => "h-is-for-hawk",
-                'codexes_id' => 49
+                'codex_authors' => 49
             ],
             [
                 'url' => "if-you-feel-too-much",
-                'codexes_id' => 50
+                'codex_authors' => 50
             ],
             [
                 'url' => "how-to-love",
-                'codexes_id' => 51
+                'codex_authors' => 51
             ],
             [
                 'url' => "love-does",
-                'codexes_id' => 52
+                'codex_authors' => 52
             ],
             [
                 'url' => "bad-feminist",
-                'codexes_id' => 53
+                'codex_authors' => 53
             ],
             [
                 'url' => "altruism",
-                'codexes_id' => 54
+                'codex_authors' => 54
             ],
             [
                 'url' => "the-argonauts",
-                'codexes_id' => 55
+                'codex_authors' => 55
             ],
             [
                 'url' => "why-men-love-bitches",
-                'codexes_id' => 56
+                'codex_authors' => 56
             ],
             [
                 'url' => "tribe",
-                'codexes_id' => 57
+                'codex_authors' => 57
             ],
             [
                 'url' => "but-what-if-we're-wrong?",
-                'codexes_id' => 58
+                'codex_authors' => 58
             ],
             [
                 'url' => "sapiens",
-                'codexes_id' => 59
+                'codex_authors' => 59
             ],
             [
                 'url' => "the-view-from-the-cheap-seats",
-                'codexes_id' => 60
+                'codex_authors' => 60
             ],
             [
                 'url' => "the-world-according-to-star-wars",
-                'codexes_id' => 61
+                'codex_authors' => 61
             ],
             [
                 'url' => "everybody-behaves-badly",
-                'codexes_id' => 62
+                'codex_authors' => 62
             ],
             [
                 'url' => "the-harvard-psychedelic-club",
-                'codexes_id' => 63
+                'codex_authors' => 63
             ],
             [
                 'url' => "diane-arbus",
-                'codexes_id' => 64
+                'codex_authors' => 64
             ]
         ]);
     }
