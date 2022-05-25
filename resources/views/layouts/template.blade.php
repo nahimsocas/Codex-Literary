@@ -6,7 +6,6 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>@yield('title')</title>
         @yield('css, javascript')
-        <script type="text/javascript" src="{{ asset('js/list.js')}}" defer></script>
         <script type="text/javascript" src="{{ asset('js/search.js')}}" defer></script>
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <link rel="stylesheet" href="{{ asset('css/header.css') }}">
@@ -20,7 +19,11 @@
                 <article id="search_section">
                     <form action="/CL/" method="POST" name="search">
                         <input list="cl_content" name="search_bar" id="search_bar" placeholder="Search in Codex Literary Library" autofocus>
-                        <datalist id="cl_content"></datalist>
+                        <datalist id="cl_content">
+                            @foreach ($searchdata as $value)
+                                <option value="{{ $value->title }}">
+                            @endforeach
+                        </datalist>
                         <input type="submit" hidden>
                     </form>
                 </article>

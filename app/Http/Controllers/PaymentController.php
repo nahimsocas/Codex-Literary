@@ -9,7 +9,7 @@ class PaymentController extends Controller
 {
     public function index()
     {
-        $amount = Store::where('users_id', '=', auth()->user()->id)->count();        
+        $amount = Store::where('users_id', '=', auth()->user()->id)->select('quantity')->get();
         return view('payment', [
             'amount' => $amount
         ]);
