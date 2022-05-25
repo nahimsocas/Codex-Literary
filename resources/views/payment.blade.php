@@ -32,7 +32,13 @@
                     {!! $errors->first('secondaddress', '<small>:message</small>') !!}
                 </section>
                 <section id="price">
-                    <p id="total">Total: <strong>{{ $amount * 10 }}&euro;</strong></p>
+                    @php
+                        $total = 0;
+                        foreach ($amount as $value) {
+                            $total += $value->quantity;
+                        }
+                    @endphp
+                    <p id="total">Total: <strong>{{ $total * 10 }}&euro;</strong></p>
                 </section>
                 <section>
                     <button type="submit">Place Order</button>

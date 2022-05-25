@@ -20,9 +20,11 @@
                     <form action="/CL/" method="POST" name="search">
                         <input list="cl_content" name="search_bar" id="search_bar" placeholder="Search in Codex Literary Library" autofocus>
                         <datalist id="cl_content">
-                            @foreach ($searchdata as $value)
-                                <option value="{{ $value->title }}">
-                            @endforeach
+                            @isset($searchdata)
+                                @foreach ($searchdata as $value)
+                                    <option value="{{ $value->title }}">
+                                @endforeach
+                            @endisset
                         </datalist>
                         <input type="submit" hidden>
                     </form>
